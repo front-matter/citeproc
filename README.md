@@ -24,7 +24,7 @@ brew install citeproc
 To install citeproc using Go, run:
 
 ```bash
-go install github.com/front-matter/citeproc@latest
+go install github.com/front-matter/citeproc/cmd/citeproc@latest
 ```
 
 ## Meta

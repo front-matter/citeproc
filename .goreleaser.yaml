@@ -9,7 +9,9 @@ before:
     - go generate ./...
 
 builds:
-  - env:
+  - main: ./cmd/citeproc
+    binary: citeproc
+    env:
       - CGO_ENABLED=0
     goos:
       - linux

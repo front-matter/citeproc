@@ -1,7 +1,7 @@
 /*
 Copyright © 2024 Front Matter <info@front-matter.io>
 */
-package cmd
+package main
 
 import (
 	"fmt"
