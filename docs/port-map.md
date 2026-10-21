@@ -90,7 +90,7 @@ How the Rust abstractions translate to Go:
 | `MaybeTyped<T>` (`types/mod.rs:311`) | `struct{ Parsed *T; Raw string }` |
 | `NonEmptyStack<T>` (`elem.rs:542`) | Generic `stack[T]` in `internal/render` |
 | `Cow<'_, T>` | Plain values or pointers |
-| `thiserror` enums | Sentinel errors plus `*csl.ParseError{Line, Col, Path, Err}` |
+| `thiserror` enums | Sentinel errors plus `*csl.ParseError{Line, Col, Element, Msg}`, collected in `csl.ErrorList` |
 
 **Style vs locale AST.** citationberg parses inline `<locale>` elements in a
 style and standalone locale files with the same types (`cb:lib.rs`, `Locale`
@@ -143,7 +143,7 @@ XML decoding. `internal/locale` owns loading, merging and lookup.
 | `OrdinalLookup` (`cb:lib.rs:3087-3210`) | `internal/locale` | `ordinal.go` | Includes legacy `ordinal-01..04` handling |
 | `LocaleCode::{parse_base, fallback, is_english}` (`cb:lib.rs:537-646`) | `internal/locale` | `code.go`: `BaseLang`, `PrimaryDialect` (static table), `IsEnglish` | |
 | `util::deserialize_bool/u32` | `internal/csl` | `decode.go`: `parseBool`, `parseUint` | |
-| `XmlDeError` + `serde_path_to_error` | `internal/csl` | `errors.go`: `ParseError{Line, Col, Path, Err}` | `plan.md` asks for line/column |
+| `XmlDeError` + `serde_path_to_error` | `internal/csl` | `errors.go`: `ParseError{Line, Col, Element, Msg}`, `ErrorList` | `plan.md` asks for line/column. All fatal errors are collected, not just the first |
 | `json::Item`, `Value`, `NameValue`/`NameItem` (`cb:json.rs:17-113`) | `citeproc` | `item.go`: `Item`, `Name`, `UnmarshalJSON` | Keep number/string duality and numeric IDs (`cb:json.rs:21-23, 57-63`) |
 | `DateValue`, `VecDate`, `FixedDate(Range)`, `parse_date`, BooleanLike `circa` (`cb:json.rs:117-466`) | `citeproc` + `internal/value` | `citeproc.Date` (JSON shape) → `value.ParseDate` → `value.Date{Start, End, Circa, Season, Literal}` | Support ranges and `literal` (hayagriva doesn't; see §9). Use **1-based** months in Go; citationberg stores 0-based (`cb:json.rs:395-397`) |
 | `json::CitationItem`, `Citation` (`cb:json.rs:471-548`) | `citeproc` | `citation.go`: `Citation`, `CitationItem` | Same fields as the CSL-JSON citation item: `id`, `locator`, `label`, `prefix`, `suffix`, `suppress-author`, `author-only`, `position`, `near-note` |

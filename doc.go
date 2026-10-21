@@ -5,6 +5,6 @@
 // the Rust crate hayagriva (https://github.com/typst/hayagriva); see
 // docs/port-map.md for how hayagriva modules map to packages in this module.
 //
-// The package is under construction: today it only exposes the embedded
-// styles and locales.
+// The package is under construction: today it exposes the embedded styles
+// and locales and parses styles with LoadStyle and ParseStyle.
 package citeproc
