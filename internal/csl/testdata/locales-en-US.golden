@@ -1,0 +1,1692 @@
+Locale @2:1
+  Lang: "en-US"
+  Version: "1.0"
+  Translators:
+    - Person
+      Name: "Andrew Dunning"
+    - Person
+      Name: "Sebastian Karcher"
+    - Person
+      Name: "Rintze M. Zelle"
+    - Person
+      Name: "Denis Meier"
+    - Person
+      Name: "Brenton M. Wiernik"
+  Rights: "This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License"
+  Updated: "2024-03-12T13:41:31+00:00"
+  StyleOptions: LocaleOptions
+    PunctuationInQuote: true
+  Dates:
+    - Date @23:3
+      Form: "text"
+      Parts:
+        - DatePart @24:5
+          Name: "month"
+          Suffix: " "
+        - DatePart @25:5
+          Name: "day"
+          Suffix: ", "
+        - DatePart @26:5
+          Name: "year"
+    - Date @28:3
+      Form: "numeric"
+      Parts:
+        - DatePart @29:5
+          Name: "month"
+          Form: "numeric-leading-zeros"
+          Suffix: "/"
+        - DatePart @30:5
+          Name: "day"
+          Form: "numeric-leading-zeros"
+          Suffix: "/"
+        - DatePart @31:5
+          Name: "year"
+  Terms:
+    - Term @35:5
+      Name: "accessed"
+      Form: "long"
+      Single: "accessed"
+      Multiple: "accessed"
+    - Term @36:5
+      Name: "advance-online-publication"
+      Form: "long"
+      Single: "advance online publication"
+      Multiple: "advance online publication"
+    - Term @37:5
+      Name: "album"
+      Form: "long"
+      Single: "album"
+      Multiple: "album"
+    - Term @38:5
+      Name: "and"
+      Form: "long"
+      Single: "and"
+      Multiple: "and"
+    - Term @39:5
+      Name: "and others"
+      Form: "long"
+      Single: "and others"
+      Multiple: "and others"
+    - Term @40:5
+      Name: "anonymous"
+      Form: "long"
+      Single: "anonymous"
+      Multiple: "anonymous"
+    - Term @41:5
+      Name: "anonymous"
+      Form: "short"
+      Single: "anon."
+      Multiple: "anon."
+    - Term @42:5
+      Name: "at"
+      Form: "long"
+      Single: "at"
+      Multiple: "at"
+    - Term @43:5
+      Name: "audio-recording"
+      Form: "long"
+      Single: "audio recording"
+      Multiple: "audio recording"
+    - Term @44:5
+      Name: "available at"
+      Form: "long"
+      Single: "available at"
+      Multiple: "available at"
+    - Term @45:5
+      Name: "by"
+      Form: "long"
+      Single: "by"
+      Multiple: "by"
+    - Term @46:5
+      Name: "circa"
+      Form: "long"
+      Single: "circa"
+      Multiple: "circa"
+    - Term @47:5
+      Name: "circa"
+      Form: "short"
+      Single: "c."
+      Multiple: "c."
+    - Term @48:5
+      Name: "cited"
+      Form: "long"
+      Single: "cited"
+      Multiple: "cited"
+    - Term @49:5
+      Name: "et-al"
+      Form: "long"
+      Single: "et al."
+      Multiple: "et al."
+    - Term @50:5
+      Name: "film"
+      Form: "long"
+      Single: "film"
+      Multiple: "film"
+    - Term @51:5
+      Name: "forthcoming"
+      Form: "long"
+      Single: "forthcoming"
+      Multiple: "forthcoming"
+    - Term @52:5
+      Name: "from"
+      Form: "long"
+      Single: "from"
+      Multiple: "from"
+    - Term @53:5
+      Name: "henceforth"
+      Form: "long"
+      Single: "henceforth"
+      Multiple: "henceforth"
+    - Term @54:5
+      Name: "ibid"
+      Form: "long"
+      Single: "ibid."
+      Multiple: "ibid."
+    - Term @55:5
+      Name: "in"
+      Form: "long"
+      Single: "in"
+      Multiple: "in"
+    - Term @56:5
+      Name: "in press"
+      Form: "long"
+      Single: "in press"
+      Multiple: "in press"
+    - Term @57:5
+      Name: "internet"
+      Form: "long"
+      Single: "internet"
+      Multiple: "internet"
+    - Term @58:5
+      Name: "letter"
+      Form: "long"
+      Single: "letter"
+      Multiple: "letter"
+    - Term @59:5
+      Name: "loc-cit"
+      Form: "long"
+      Single: "loc. cit."
+      Multiple: "loc. cit."
+    - Term @60:5
+      Name: "no date"
+      Form: "long"
+      Single: "no date"
+      Multiple: "no date"
+    - Term @61:5
+      Name: "no date"
+      Form: "short"
+      Single: "n.d."
+      Multiple: "n.d."
+    - Term @62:5
+      Name: "no-place"
+      Form: "long"
+      Single: "no place"
+      Multiple: "no place"
+    - Term @63:5
+      Name: "no-place"
+      Form: "short"
+      Single: "n.p."
+      Multiple: "n.p."
+    - Term @64:5
+      Name: "no-publisher"
+      Form: "long"
+      Single: "no publisher"
+      Multiple: "no publisher"
+    - Term @65:5
+      Name: "no-publisher"
+      Form: "short"
+      Single: "n.p."
+      Multiple: "n.p."
+    - Term @66:5
+      Name: "on"
+      Form: "long"
+      Single: "on"
+      Multiple: "on"
+    - Term @67:5
+      Name: "online"
+      Form: "long"
+      Single: "online"
+      Multiple: "online"
+    - Term @68:5
+      Name: "op-cit"
+      Form: "long"
+      Single: "op. cit."
+      Multiple: "op. cit."
+    - Term @69:5
+      Name: "original-work-published"
+      Form: "long"
+      Single: "original work published"
+      Multiple: "original work published"
+    - Term @70:5
+      Name: "personal-communication"
+      Form: "long"
+      Single: "personal communication"
+      Multiple: "personal communication"
+    - Term @71:5
+      Name: "podcast"
+      Form: "long"
+      Single: "podcast"
+      Multiple: "podcast"
+    - Term @72:5
+      Name: "podcast-episode"
+      Form: "long"
+      Single: "podcast episode"
+      Multiple: "podcast episode"
+    - Term @73:5
+      Name: "preprint"
+      Form: "long"
+      Single: "preprint"
+      Multiple: "preprint"
+    - Term @74:5
+      Name: "presented at"
+      Form: "long"
+      Single: "presented at the"
+      Multiple: "presented at the"
+    - Term @75:5
+      Name: "radio-broadcast"
+      Form: "long"
+      Single: "radio broadcast"
+      Multiple: "radio broadcast"
+    - Term @76:5
+      Name: "radio-series"
+      Form: "long"
+      Single: "radio series"
+      Multiple: "radio series"
+    - Term @77:5
+      Name: "radio-series-episode"
+      Form: "long"
+      Single: "radio series episode"
+      Multiple: "radio series episode"
+    - Term @78:5
+      Name: "reference"
+      Form: "long"
+      Single: "reference"
+      Multiple: "references"
+    - Term @82:5
+      Name: "reference"
+      Form: "short"
+      Single: "ref."
+      Multiple: "refs."
+    - Term @86:5
+      Name: "retrieved"
+      Form: "long"
+      Single: "retrieved"
+      Multiple: "retrieved"
+    - Term @87:5
+      Name: "review-of"
+      Form: "long"
+      Single: "review of"
+      Multiple: "review of"
+    - Term @88:5
+      Name: "review-of"
+      Form: "short"
+      Single: "rev. of"
+      Multiple: "rev. of"
+    - Term @89:5
+      Name: "scale"
+      Form: "long"
+      Single: "scale"
+      Multiple: "scale"
+    - Term @90:5
+      Name: "special-issue"
+      Form: "long"
+      Single: "special issue"
+      Multiple: "special issue"
+    - Term @91:5
+      Name: "special-section"
+      Form: "long"
+      Single: "special section"
+      Multiple: "special section"
+    - Term @92:5
+      Name: "television-broadcast"
+      Form: "long"
+      Single: "television broadcast"
+      Multiple: "television broadcast"
+    - Term @93:5
+      Name: "television-series"
+      Form: "long"
+      Single: "television series"
+      Multiple: "television series"
+    - Term @94:5
+      Name: "television-series-episode"
+      Form: "long"
+      Single: "television series episode"
+      Multiple: "television series episode"
+    - Term @95:5
+      Name: "video"
+      Form: "long"
+      Single: "video"
+      Multiple: "video"
+    - Term @96:5
+      Name: "working-paper"
+      Form: "long"
+      Single: "working paper"
+      Multiple: "working paper"
+    - Term @99:5
+      Name: "article"
+      Form: "long"
+      Single: "preprint"
+      Multiple: "preprint"
+    - Term @100:5
+      Name: "article-journal"
+      Form: "long"
+      Single: "journal article"
+      Multiple: "journal article"
+    - Term @101:5
+      Name: "article-magazine"
+      Form: "long"
+      Single: "magazine article"
+      Multiple: "magazine article"
+    - Term @102:5
+      Name: "article-newspaper"
+      Form: "long"
+      Single: "newspaper article"
+      Multiple: "newspaper article"
+    - Term @103:5
+      Name: "bill"
+      Form: "long"
+      Single: "bill"
+      Multiple: "bill"
+    - Term @105:5
+      Name: "broadcast"
+      Form: "long"
+      Single: "broadcast"
+      Multiple: "broadcast"
+    - Term @107:5
+      Name: "classic"
+      Form: "long"
+      Single: "classic"
+      Multiple: "classic"
+    - Term @108:5
+      Name: "collection"
+      Form: "long"
+      Single: "collection"
+      Multiple: "collection"
+    - Term @109:5
+      Name: "dataset"
+      Form: "long"
+      Single: "dataset"
+      Multiple: "dataset"
+    - Term @110:5
+      Name: "document"
+      Form: "long"
+      Single: "document"
+      Multiple: "document"
+    - Term @111:5
+      Name: "entry"
+      Form: "long"
+      Single: "entry"
+      Multiple: "entry"
+    - Term @112:5
+      Name: "entry-dictionary"
+      Form: "long"
+      Single: "dictionary entry"
+      Multiple: "dictionary entry"
+    - Term @113:5
+      Name: "entry-encyclopedia"
+      Form: "long"
+      Single: "encyclopedia entry"
+      Multiple: "encyclopedia entry"
+    - Term @114:5
+      Name: "event"
+      Form: "long"
+      Single: "event"
+      Multiple: "event"
+    - Term @116:5
+      Name: "graphic"
+      Form: "long"
+      Single: "graphic"
+      Multiple: "graphic"
+    - Term @117:5
+      Name: "hearing"
+      Form: "long"
+      Single: "hearing"
+      Multiple: "hearing"
+    - Term @118:5
+      Name: "interview"
+      Form: "long"
+      Single: "interview"
+      Multiple: "interview"
+    - Term @119:5
+      Name: "legal_case"
+      Form: "long"
+      Single: "legal case"
+      Multiple: "legal case"
+    - Term @120:5
+      Name: "legislation"
+      Form: "long"
+      Single: "legislation"
+      Multiple: "legislation"
+    - Term @121:5
+      Name: "manuscript"
+      Form: "long"
+      Single: "manuscript"
+      Multiple: "manuscript"
+    - Term @122:5
+      Name: "map"
+      Form: "long"
+      Single: "map"
+      Multiple: "map"
+    - Term @123:5
+      Name: "motion_picture"
+      Form: "long"
+      Single: "video recording"
+      Multiple: "video recording"
+    - Term @124:5
+      Name: "musical_score"
+      Form: "long"
+      Single: "musical score"
+      Multiple: "musical score"
+    - Term @125:5
+      Name: "pamphlet"
+      Form: "long"
+      Single: "pamphlet"
+      Multiple: "pamphlet"
+    - Term @126:5
+      Name: "paper-conference"
+      Form: "long"
+      Single: "conference paper"
+      Multiple: "conference paper"
+    - Term @127:5
+      Name: "patent"
+      Form: "long"
+      Single: "patent"
+      Multiple: "patent"
+    - Term @128:5
+      Name: "performance"
+      Form: "long"
+      Single: "performance"
+      Multiple: "performance"
+    - Term @129:5
+      Name: "periodical"
+      Form: "long"
+      Single: "periodical"
+      Multiple: "periodical"
+    - Term @130:5
+      Name: "personal_communication"
+      Form: "long"
+      Single: "personal communication"
+      Multiple: "personal communication"
+    - Term @131:5
+      Name: "post"
+      Form: "long"
+      Single: "post"
+      Multiple: "post"
+    - Term @132:5
+      Name: "post-weblog"
+      Form: "long"
+      Single: "blog post"
+      Multiple: "blog post"
+    - Term @133:5
+      Name: "regulation"
+      Form: "long"
+      Single: "regulation"
+      Multiple: "regulation"
+    - Term @134:5
+      Name: "report"
+      Form: "long"
+      Single: "report"
+      Multiple: "report"
+    - Term @135:5
+      Name: "review"
+      Form: "long"
+      Single: "review"
+      Multiple: "review"
+    - Term @136:5
+      Name: "review-book"
+      Form: "long"
+      Single: "book review"
+      Multiple: "book review"
+    - Term @137:5
+      Name: "software"
+      Form: "long"
+      Single: "software"
+      Multiple: "software"
+    - Term @138:5
+      Name: "song"
+      Form: "long"
+      Single: "audio recording"
+      Multiple: "audio recording"
+    - Term @139:5
+      Name: "speech"
+      Form: "long"
+      Single: "presentation"
+      Multiple: "presentation"
+    - Term @140:5
+      Name: "standard"
+      Form: "long"
+      Single: "standard"
+      Multiple: "standard"
+    - Term @141:5
+      Name: "thesis"
+      Form: "long"
+      Single: "thesis"
+      Multiple: "thesis"
+    - Term @142:5
+      Name: "treaty"
+      Form: "long"
+      Single: "treaty"
+      Multiple: "treaty"
+    - Term @143:5
+      Name: "webpage"
+      Form: "long"
+      Single: "webpage"
+      Multiple: "webpage"
+    - Term @146:5
+      Name: "article-journal"
+      Form: "short"
+      Single: "journal art."
+      Multiple: "journal art."
+    - Term @147:5
+      Name: "article-magazine"
+      Form: "short"
+      Single: "mag. art."
+      Multiple: "mag. art."
+    - Term @148:5
+      Name: "article-newspaper"
+      Form: "short"
+      Single: "newspaper art."
+      Multiple: "newspaper art."
+    - Term @151:5
+      Name: "document"
+      Form: "short"
+      Single: "doc."
+      Multiple: "doc."
+    - Term @153:5
+      Name: "graphic"
+      Form: "short"
+      Single: "graph."
+      Multiple: "graph."
+    - Term @154:5
+      Name: "interview"
+      Form: "short"
+      Single: "interv."
+      Multiple: "interv."
+    - Term @155:5
+      Name: "manuscript"
+      Form: "short"
+      Single: "MS"
+      Multiple: "MS"
+    - Term @156:5
+      Name: "motion_picture"
+      Form: "short"
+      Single: "video rec."
+      Multiple: "video rec."
+    - Term @157:5
+      Name: "report"
+      Form: "short"
+      Single: "rep."
+      Multiple: "rep."
+    - Term @158:5
+      Name: "review"
+      Form: "short"
+      Single: "rev."
+      Multiple: "rev."
+    - Term @159:5
+      Name: "review-book"
+      Form: "short"
+      Single: "bk. rev."
+      Multiple: "bk. rev."
+    - Term @160:5
+      Name: "song"
+      Form: "short"
+      Single: "audio rec."
+      Multiple: "audio rec."
+    - Term @164:5
+      Name: "hearing"
+      Form: "verb"
+      Single: "testimony of"
+      Multiple: "testimony of"
+    - Term @165:5
+      Name: "review"
+      Form: "verb"
+      Single: "review of"
+      Multiple: "review of"
+    - Term @166:5
+      Name: "review-book"
+      Form: "verb"
+      Single: "review of the book"
+      Multiple: "review of the book"
+    - Term @169:5
+      Name: "ad"
+      Form: "long"
+      Single: "AD"
+      Multiple: "AD"
+    - Term @170:5
+      Name: "bc"
+      Form: "long"
+      Single: "BC"
+      Multiple: "BC"
+    - Term @171:5
+      Name: "bce"
+      Form: "long"
+      Single: "BCE"
+      Multiple: "BCE"
+    - Term @172:5
+      Name: "ce"
+      Form: "long"
+      Single: "CE"
+      Multiple: "CE"
+    - Term @175:5
+      Name: "open-quote"
+      Form: "long"
+      Single: "“"
+      Multiple: "“"
+    - Term @176:5
+      Name: "close-quote"
+      Form: "long"
+      Single: "”"
+      Multiple: "”"
+    - Term @177:5
+      Name: "open-inner-quote"
+      Form: "long"
+      Single: "‘"
+      Multiple: "‘"
+    - Term @178:5
+      Name: "close-inner-quote"
+      Form: "long"
+      Single: "’"
+      Multiple: "’"
+    - Term @179:5
+      Name: "page-range-delimiter"
+      Form: "long"
+      Single: "–"
+      Multiple: "–"
+    - Term @180:5
+      Name: "colon"
+      Form: "long"
+      Single: ":"
+      Multiple: ":"
+    - Term @181:5
+      Name: "comma"
+      Form: "long"
+      Single: ","
+      Multiple: ","
+    - Term @182:5
+      Name: "semicolon"
+      Form: "long"
+      Single: ";"
+      Multiple: ";"
+    - Term @185:5
+      Name: "ordinal"
+      Form: "long"
+      Single: "th"
+      Multiple: "th"
+    - Term @186:5
+      Name: "ordinal-01"
+      Form: "long"
+      Single: "st"
+      Multiple: "st"
+    - Term @187:5
+      Name: "ordinal-02"
+      Form: "long"
+      Single: "nd"
+      Multiple: "nd"
+    - Term @188:5
+      Name: "ordinal-03"
+      Form: "long"
+      Single: "rd"
+      Multiple: "rd"
+    - Term @189:5
+      Name: "ordinal-11"
+      Form: "long"
+      Single: "th"
+      Multiple: "th"
+    - Term @190:5
+      Name: "ordinal-12"
+      Form: "long"
+      Single: "th"
+      Multiple: "th"
+    - Term @191:5
+      Name: "ordinal-13"
+      Form: "long"
+      Single: "th"
+      Multiple: "th"
+    - Term @194:5
+      Name: "long-ordinal-01"
+      Form: "long"
+      Single: "first"
+      Multiple: "first"
+    - Term @195:5
+      Name: "long-ordinal-02"
+      Form: "long"
+      Single: "second"
+      Multiple: "second"
+    - Term @196:5
+      Name: "long-ordinal-03"
+      Form: "long"
+      Single: "third"
+      Multiple: "third"
+    - Term @197:5
+      Name: "long-ordinal-04"
+      Form: "long"
+      Single: "fourth"
+      Multiple: "fourth"
+    - Term @198:5
+      Name: "long-ordinal-05"
+      Form: "long"
+      Single: "fifth"
+      Multiple: "fifth"
+    - Term @199:5
+      Name: "long-ordinal-06"
+      Form: "long"
+      Single: "sixth"
+      Multiple: "sixth"
+    - Term @200:5
+      Name: "long-ordinal-07"
+      Form: "long"
+      Single: "seventh"
+      Multiple: "seventh"
+    - Term @201:5
+      Name: "long-ordinal-08"
+      Form: "long"
+      Single: "eighth"
+      Multiple: "eighth"
+    - Term @202:5
+      Name: "long-ordinal-09"
+      Form: "long"
+      Single: "ninth"
+      Multiple: "ninth"
+    - Term @203:5
+      Name: "long-ordinal-10"
+      Form: "long"
+      Single: "tenth"
+      Multiple: "tenth"
+    - Term @206:5
+      Name: "act"
+      Form: "long"
+      Single: "act"
+      Multiple: "acts"
+    - Term @210:5
+      Name: "appendix"
+      Form: "long"
+      Single: "appendix"
+      Multiple: "appendices"
+    - Term @214:5
+      Name: "article-locator"
+      Form: "long"
+      Single: "article"
+      Multiple: "articles"
+    - Term @218:5
+      Name: "book"
+      Form: "long"
+      Single: "book"
+      Multiple: "books"
+    - Term @222:5
+      Name: "canon"
+      Form: "long"
+      Single: "canon"
+      Multiple: "canons"
+    - Term @226:5
+      Name: "chapter"
+      Form: "long"
+      Single: "chapter"
+      Multiple: "chapters"
+    - Term @230:5
+      Name: "column"
+      Form: "long"
+      Single: "column"
+      Multiple: "columns"
+    - Term @234:5
+      Name: "elocation"
+      Form: "long"
+      Single: "location"
+      Multiple: "locations"
+    - Term @238:5
+      Name: "equation"
+      Form: "long"
+      Single: "equation"
+      Multiple: "equations"
+    - Term @242:5
+      Name: "figure"
+      Form: "long"
+      Single: "figure"
+      Multiple: "figures"
+    - Term @246:5
+      Name: "folio"
+      Form: "long"
+      Single: "folio"
+      Multiple: "folios"
+    - Term @250:5
+      Name: "issue"
+      Form: "long"
+      Single: "number"
+      Multiple: "numbers"
+    - Term @254:5
+      Name: "line"
+      Form: "long"
+      Single: "line"
+      Multiple: "lines"
+    - Term @258:5
+      Name: "note"
+      Form: "long"
+      Single: "note"
+      Multiple: "notes"
+    - Term @262:5
+      Name: "opus"
+      Form: "long"
+      Single: "opus"
+      Multiple: "opera"
+    - Term @266:5
+      Name: "page"
+      Form: "long"
+      Single: "page"
+      Multiple: "pages"
+    - Term @270:5
+      Name: "paragraph"
+      Form: "long"
+      Single: "paragraph"
+      Multiple: "paragraphs"
+    - Term @274:5
+      Name: "part"
+      Form: "long"
+      Single: "part"
+      Multiple: "parts"
+    - Term @278:5
+      Name: "rule"
+      Form: "long"
+      Single: "rule"
+      Multiple: "rules"
+    - Term @282:5
+      Name: "scene"
+      Form: "long"
+      Single: "scene"
+      Multiple: "scenes"
+    - Term @286:5
+      Name: "section"
+      Form: "long"
+      Single: "section"
+      Multiple: "sections"
+    - Term @290:5
+      Name: "sub-verbo"
+      Form: "long"
+      Single: "sub verbo"
+      Multiple: "sub verbis"
+    - Term @294:5
+      Name: "supplement"
+      Form: "long"
+      Single: "supplement"
+      Multiple: "supplements"
+    - Term @298:5
+      Name: "table"
+      Form: "long"
+      Single: "table"
+      Multiple: "tables"
+    - Term @302:5
+      Name: "timestamp"
+      Form: "long"
+    - Term @306:5
+      Name: "title-locator"
+      Form: "long"
+      Single: "title"
+      Multiple: "titles"
+    - Term @310:5
+      Name: "verse"
+      Form: "long"
+      Single: "verse"
+      Multiple: "verses"
+    - Term @314:5
+      Name: "version"
+      Form: "long"
+      Single: "version"
+      Multiple: "versions"
+    - Term @318:5
+      Name: "volume"
+      Form: "long"
+      Single: "volume"
+      Multiple: "volumes"
+    - Term @325:5
+      Name: "appendix"
+      Form: "short"
+      Single: "app."
+      Multiple: "apps."
+    - Term @329:5
+      Name: "article-locator"
+      Form: "short"
+      Single: "art."
+      Multiple: "arts."
+    - Term @333:5
+      Name: "book"
+      Form: "short"
+      Single: "bk."
+      Multiple: "bks."
+    - Term @337:5
+      Name: "canon"
+      Form: "short"
+      Single: "c."
+      Multiple: "cc."
+    - Term @341:5
+      Name: "chapter"
+      Form: "short"
+      Single: "chap."
+      Multiple: "chaps."
+    - Term @345:5
+      Name: "column"
+      Form: "short"
+      Single: "col."
+      Multiple: "cols."
+    - Term @349:5
+      Name: "elocation"
+      Form: "short"
+      Single: "loc."
+      Multiple: "locs."
+    - Term @353:5
+      Name: "equation"
+      Form: "short"
+      Single: "eq."
+      Multiple: "eqs."
+    - Term @357:5
+      Name: "figure"
+      Form: "short"
+      Single: "fig."
+      Multiple: "figs."
+    - Term @361:5
+      Name: "folio"
+      Form: "short"
+      Single: "fol."
+      Multiple: "fols."
+    - Term @365:5
+      Name: "issue"
+      Form: "short"
+      Single: "no."
+      Multiple: "nos."
+    - Term @369:5
+      Name: "line"
+      Form: "short"
+      Single: "l."
+      Multiple: "ll."
+    - Term @373:5
+      Name: "note"
+      Form: "short"
+      Single: "n."
+      Multiple: "nn."
+    - Term @377:5
+      Name: "opus"
+      Form: "short"
+      Single: "op."
+      Multiple: "opp."
+    - Term @381:5
+      Name: "page"
+      Form: "short"
+      Single: "p."
+      Multiple: "pp."
+    - Term @385:5
+      Name: "paragraph"
+      Form: "short"
+      Single: "para."
+      Multiple: "paras."
+    - Term @389:5
+      Name: "part"
+      Form: "short"
+      Single: "pt."
+      Multiple: "pts."
+    - Term @393:5
+      Name: "rule"
+      Form: "short"
+      Single: "r."
+      Multiple: "rr."
+    - Term @397:5
+      Name: "scene"
+      Form: "short"
+      Single: "sc."
+      Multiple: "scs."
+    - Term @401:5
+      Name: "section"
+      Form: "short"
+      Single: "sec."
+      Multiple: "secs."
+    - Term @405:5
+      Name: "sub-verbo"
+      Form: "short"
+      Single: "s.v."
+      Multiple: "s.vv."
+    - Term @409:5
+      Name: "supplement"
+      Form: "short"
+      Single: "supp."
+      Multiple: "supps."
+    - Term @413:5
+      Name: "table"
+      Form: "short"
+      Single: "tbl."
+      Multiple: "tbls."
+    - Term @417:5
+      Name: "title-locator"
+      Form: "short"
+      Single: "tit."
+      Multiple: "tits."
+    - Term @421:5
+      Name: "verse"
+      Form: "short"
+      Single: "v."
+      Multiple: "vv."
+    - Term @425:5
+      Name: "version"
+      Form: "short"
+      Single: "v."
+      Multiple: "v."
+    - Term @429:5
+      Name: "volume"
+      Form: "short"
+      Single: "vol."
+      Multiple: "vols."
+    - Term @435:5
+      Name: "paragraph"
+      Form: "symbol"
+      Single: "¶"
+      Multiple: "¶¶"
+    - Term @439:5
+      Name: "section"
+      Form: "symbol"
+      Single: "§"
+      Multiple: "§§"
+    - Term @445:5
+      Name: "chapter-number"
+      Form: "long"
+      Single: "chapter"
+      Multiple: "chapters"
+    - Term @449:5
+      Name: "citation-number"
+      Form: "long"
+      Single: "citation"
+      Multiple: "citations"
+    - Term @453:5
+      Name: "collection-number"
+      Form: "long"
+      Single: "number"
+      Multiple: "numbers"
+    - Term @457:5
+      Name: "edition"
+      Form: "long"
+      Single: "edition"
+      Multiple: "editions"
+    - Term @461:5
+      Name: "first-reference-note-number"
+      Form: "long"
+      Single: "reference"
+      Multiple: "references"
+    - Term @465:5
+      Name: "number"
+      Form: "long"
+      Single: "number"
+      Multiple: "numbers"
+    - Term @469:5
+      Name: "number-of-pages"
+      Form: "long"
+      Single: "page"
+      Multiple: "pages"
+    - Term @473:5
+      Name: "number-of-volumes"
+      Form: "long"
+      Single: "volume"
+      Multiple: "volumes"
+    - Term @477:5
+      Name: "page-first"
+      Form: "long"
+      Single: "page"
+      Multiple: "pages"
+    - Term @481:5
+      Name: "printing"
+      Form: "long"
+      Single: "printing"
+      Multiple: "printings"
+    - Term @487:5
+      Name: "chapter-number"
+      Form: "short"
+      Single: "chap."
+      Multiple: "chaps."
+    - Term @491:5
+      Name: "citation-number"
+      Form: "short"
+      Single: "cit."
+      Multiple: "cits."
+    - Term @495:5
+      Name: "collection-number"
+      Form: "short"
+      Single: "no."
+      Multiple: "nos."
+    - Term @499:5
+      Name: "edition"
+      Form: "short"
+      Single: "ed."
+      Multiple: "eds."
+    - Term @503:5
+      Name: "first-reference-note-number"
+      Form: "short"
+      Single: "ref."
+      Multiple: "refs."
+    - Term @507:5
+      Name: "number"
+      Form: "short"
+      Single: "no."
+      Multiple: "nos."
+    - Term @511:5
+      Name: "number-of-pages"
+      Form: "short"
+      Single: "p."
+      Multiple: "pp."
+    - Term @515:5
+      Name: "number-of-volumes"
+      Form: "short"
+      Single: "vol."
+      Multiple: "vols."
+    - Term @519:5
+      Name: "page-first"
+      Form: "short"
+      Single: "p."
+      Multiple: "pp."
+    - Term @523:5
+      Name: "printing"
+      Form: "short"
+      Single: "print."
+      Multiple: "prints."
+    - Term @533:5
+      Name: "chair"
+      Form: "long"
+      Single: "chair"
+      Multiple: "chairs"
+    - Term @537:5
+      Name: "collection-editor"
+      Form: "long"
+      Single: "editor"
+      Multiple: "editors"
+    - Term @541:5
+      Name: "compiler"
+      Form: "long"
+      Single: "compiler"
+      Multiple: "compilers"
+    - Term @545:5
+      Name: "contributor"
+      Form: "long"
+      Single: "contributor"
+      Multiple: "contributors"
+    - Term @549:5
+      Name: "curator"
+      Form: "long"
+      Single: "curator"
+      Multiple: "curators"
+    - Term @553:5
+      Name: "director"
+      Form: "long"
+      Single: "director"
+      Multiple: "directors"
+    - Term @557:5
+      Name: "editor"
+      Form: "long"
+      Single: "editor"
+      Multiple: "editors"
+    - Term @561:5
+      Name: "editortranslator"
+      Form: "long"
+      Single: "editor & translator"
+      Multiple: "editors & translators"
+    - Term @565:5
+      Name: "editorial-director"
+      Form: "long"
+      Single: "editor"
+      Multiple: "editors"
+    - Term @569:5
+      Name: "executive-producer"
+      Form: "long"
+      Single: "executive producer"
+      Multiple: "executive producers"
+    - Term @573:5
+      Name: "guest"
+      Form: "long"
+      Single: "guest"
+      Multiple: "guests"
+    - Term @577:5
+      Name: "host"
+      Form: "long"
+      Single: "host"
+      Multiple: "hosts"
+    - Term @581:5
+      Name: "illustrator"
+      Form: "long"
+      Single: "illustrator"
+      Multiple: "illustrators"
+    - Term @585:5
+      Name: "narrator"
+      Form: "long"
+      Single: "narrator"
+      Multiple: "narrators"
+    - Term @589:5
+      Name: "organizer"
+      Form: "long"
+      Single: "organizer"
+      Multiple: "organizers"
+    - Term @593:5
+      Name: "performer"
+      Form: "long"
+      Single: "performer"
+      Multiple: "performers"
+    - Term @597:5
+      Name: "producer"
+      Form: "long"
+      Single: "producer"
+      Multiple: "producers"
+    - Term @601:5
+      Name: "script-writer"
+      Form: "long"
+      Single: "writer"
+      Multiple: "writers"
+    - Term @605:5
+      Name: "series-creator"
+      Form: "long"
+      Single: "series creator"
+      Multiple: "series creators"
+    - Term @609:5
+      Name: "translator"
+      Form: "long"
+      Single: "translator"
+      Multiple: "translators"
+    - Term @618:5
+      Name: "collection-editor"
+      Form: "short"
+      Single: "ed."
+      Multiple: "eds."
+    - Term @622:5
+      Name: "compiler"
+      Form: "short"
+      Single: "comp."
+      Multiple: "comps."
+    - Term @626:5
+      Name: "contributor"
+      Form: "short"
+      Single: "contrib."
+      Multiple: "contribs."
+    - Term @630:5
+      Name: "curator"
+      Form: "short"
+      Single: "cur."
+      Multiple: "curs."
+    - Term @634:5
+      Name: "director"
+      Form: "short"
+      Single: "dir."
+      Multiple: "dirs."
+    - Term @638:5
+      Name: "editor"
+      Form: "short"
+      Single: "ed."
+      Multiple: "eds."
+    - Term @642:5
+      Name: "editortranslator"
+      Form: "short"
+      Single: "ed. & tran."
+      Multiple: "eds. & trans."
+    - Term @646:5
+      Name: "editorial-director"
+      Form: "short"
+      Single: "ed."
+      Multiple: "eds."
+    - Term @650:5
+      Name: "executive-producer"
+      Form: "short"
+      Single: "exec. prod."
+      Multiple: "exec. prods."
+    - Term @654:5
+      Name: "illustrator"
+      Form: "short"
+      Single: "ill."
+      Multiple: "ills."
+    - Term @658:5
+      Name: "narrator"
+      Form: "short"
+      Single: "narr."
+      Multiple: "narrs."
+    - Term @662:5
+      Name: "organizer"
+      Form: "short"
+      Single: "org."
+      Multiple: "orgs."
+    - Term @666:5
+      Name: "performer"
+      Form: "short"
+      Single: "perf."
+      Multiple: "perfs."
+    - Term @670:5
+      Name: "producer"
+      Form: "short"
+      Single: "prod."
+      Multiple: "prods."
+    - Term @674:5
+      Name: "script-writer"
+      Form: "short"
+      Single: "writ."
+      Multiple: "writs."
+    - Term @678:5
+      Name: "series-creator"
+      Form: "short"
+      Single: "cre."
+      Multiple: "cres."
+    - Term @682:5
+      Name: "translator"
+      Form: "short"
+      Single: "tran."
+      Multiple: "trans."
+    - Term @688:5
+      Name: "chair"
+      Form: "verb"
+      Single: "chaired by"
+      Multiple: "chaired by"
+    - Term @689:5
+      Name: "collection-editor"
+      Form: "verb"
+      Single: "edited by"
+      Multiple: "edited by"
+    - Term @690:5
+      Name: "compiler"
+      Form: "verb"
+      Single: "compiled by"
+      Multiple: "compiled by"
+    - Term @691:5
+      Name: "composer"
+      Form: "verb"
+      Single: "composed by"
+      Multiple: "composed by"
+    - Term @692:5
+      Name: "container-author"
+      Form: "verb"
+      Single: "by"
+      Multiple: "by"
+    - Term @693:5
+      Name: "contributor"
+      Form: "verb"
+      Single: "with"
+      Multiple: "with"
+    - Term @694:5
+      Name: "curator"
+      Form: "verb"
+      Single: "curated by"
+      Multiple: "curated by"
+    - Term @695:5
+      Name: "director"
+      Form: "verb"
+      Single: "directed by"
+      Multiple: "directed by"
+    - Term @696:5
+      Name: "editor"
+      Form: "verb"
+      Single: "edited by"
+      Multiple: "edited by"
+    - Term @697:5
+      Name: "editortranslator"
+      Form: "verb"
+      Single: "edited & translated by"
+      Multiple: "edited & translated by"
+    - Term @698:5
+      Name: "editorial-director"
+      Form: "verb"
+      Single: "edited by"
+      Multiple: "edited by"
+    - Term @699:5
+      Name: "executive-producer"
+      Form: "verb"
+      Single: "executive produced by"
+      Multiple: "executive produced by"
+    - Term @700:5
+      Name: "guest"
+      Form: "verb"
+      Single: "with guest"
+      Multiple: "with guest"
+    - Term @701:5
+      Name: "host"
+      Form: "verb"
+      Single: "hosted by"
+      Multiple: "hosted by"
+    - Term @702:5
+      Name: "illustrator"
+      Form: "verb"
+      Single: "illustrated by"
+      Multiple: "illustrated by"
+    - Term @703:5
+      Name: "interviewer"
+      Form: "verb"
+      Single: "interview by"
+      Multiple: "interview by"
+    - Term @704:5
+      Name: "narrator"
+      Form: "verb"
+      Single: "narrated by"
+      Multiple: "narrated by"
+    - Term @705:5
+      Name: "organizer"
+      Form: "verb"
+      Single: "organized by"
+      Multiple: "organized by"
+    - Term @706:5
+      Name: "original-author"
+      Form: "verb"
+      Single: "by"
+      Multiple: "by"
+    - Term @707:5
+      Name: "performer"
+      Form: "verb"
+      Single: "performed by"
+      Multiple: "performed by"
+    - Term @708:5
+      Name: "producer"
+      Form: "verb"
+      Single: "produced by"
+      Multiple: "produced by"
+    - Term @709:5
+      Name: "recipient"
+      Form: "verb"
+      Single: "to"
+      Multiple: "to"
+    - Term @710:5
+      Name: "reviewed-author"
+      Form: "verb"
+      Single: "by"
+      Multiple: "by"
+    - Term @711:5
+      Name: "script-writer"
+      Form: "verb"
+      Single: "written by"
+      Multiple: "written by"
+    - Term @712:5
+      Name: "series-creator"
+      Form: "verb"
+      Single: "created by"
+      Multiple: "created by"
+    - Term @713:5
+      Name: "translator"
+      Form: "verb"
+      Single: "translated by"
+      Multiple: "translated by"
+    - Term @719:5
+      Name: "collection-editor"
+      Form: "verb-short"
+      Single: "ed. by"
+      Multiple: "ed. by"
+    - Term @720:5
+      Name: "compiler"
+      Form: "verb-short"
+      Single: "comp. by"
+      Multiple: "comp. by"
+    - Term @721:5
+      Name: "composer"
+      Form: "verb-short"
+      Single: "comp. by"
+      Multiple: "comp. by"
+    - Term @722:5
+      Name: "contributor"
+      Form: "verb-short"
+      Single: "w."
+      Multiple: "w."
+    - Term @723:5
+      Name: "curator"
+      Form: "verb-short"
+      Single: "cur. by"
+      Multiple: "cur. by"
+    - Term @724:5
+      Name: "director"
+      Form: "verb-short"
+      Single: "dir. by"
+      Multiple: "dir. by"
+    - Term @725:5
+      Name: "editor"
+      Form: "verb-short"
+      Single: "ed. by"
+      Multiple: "ed. by"
+    - Term @726:5
+      Name: "editortranslator"
+      Form: "verb-short"
+      Single: "ed. & trans. by"
+      Multiple: "ed. & trans. by"
+    - Term @727:5
+      Name: "editorial-director"
+      Form: "verb-short"
+      Single: "ed. by"
+      Multiple: "ed. by"
+    - Term @728:5
+      Name: "executive-producer"
+      Form: "verb-short"
+      Single: "exec. prod. by"
+      Multiple: "exec. prod. by"
+    - Term @729:5
+      Name: "guest"
+      Form: "verb-short"
+      Single: "w. guest"
+      Multiple: "w. guest"
+    - Term @730:5
+      Name: "illustrator"
+      Form: "verb-short"
+      Single: "illus. by"
+      Multiple: "illus. by"
+    - Term @731:5
+      Name: "narrator"
+      Form: "verb-short"
+      Single: "narr. by"
+      Multiple: "narr. by"
+    - Term @732:5
+      Name: "organizer"
+      Form: "verb-short"
+      Single: "org. by"
+      Multiple: "org. by"
+    - Term @733:5
+      Name: "performer"
+      Form: "verb-short"
+      Single: "perf. by"
+      Multiple: "perf. by"
+    - Term @734:5
+      Name: "producer"
+      Form: "verb-short"
+      Single: "prod. by"
+      Multiple: "prod. by"
+    - Term @735:5
+      Name: "script-writer"
+      Form: "verb-short"
+      Single: "writ. by"
+      Multiple: "writ. by"
+    - Term @736:5
+      Name: "series-creator"
+      Form: "verb-short"
+      Single: "cre. by"
+      Multiple: "cre. by"
+    - Term @737:5
+      Name: "translator"
+      Form: "verb-short"
+      Single: "trans. by"
+      Multiple: "trans. by"
+    - Term @740:5
+      Name: "month-01"
+      Form: "long"
+      Single: "January"
+      Multiple: "January"
+    - Term @741:5
+      Name: "month-02"
+      Form: "long"
+      Single: "February"
+      Multiple: "February"
+    - Term @742:5
+      Name: "month-03"
+      Form: "long"
+      Single: "March"
+      Multiple: "March"
+    - Term @743:5
+      Name: "month-04"
+      Form: "long"
+      Single: "April"
+      Multiple: "April"
+    - Term @744:5
+      Name: "month-05"
+      Form: "long"
+      Single: "May"
+      Multiple: "May"
+    - Term @745:5
+      Name: "month-06"
+      Form: "long"
+      Single: "June"
+      Multiple: "June"
+    - Term @746:5
+      Name: "month-07"
+      Form: "long"
+      Single: "July"
+      Multiple: "July"
+    - Term @747:5
+      Name: "month-08"
+      Form: "long"
+      Single: "August"
+      Multiple: "August"
+    - Term @748:5
+      Name: "month-09"
+      Form: "long"
+      Single: "September"
+      Multiple: "September"
+    - Term @749:5
+      Name: "month-10"
+      Form: "long"
+      Single: "October"
+      Multiple: "October"
+    - Term @750:5
+      Name: "month-11"
+      Form: "long"
+      Single: "November"
+      Multiple: "November"
+    - Term @751:5
+      Name: "month-12"
+      Form: "long"
+      Single: "December"
+      Multiple: "December"
+    - Term @754:5
+      Name: "month-01"
+      Form: "short"
+      Single: "Jan."
+      Multiple: "Jan."
+    - Term @755:5
+      Name: "month-02"
+      Form: "short"
+      Single: "Feb."
+      Multiple: "Feb."
+    - Term @756:5
+      Name: "month-03"
+      Form: "short"
+      Single: "Mar."
+      Multiple: "Mar."
+    - Term @757:5
+      Name: "month-04"
+      Form: "short"
+      Single: "Apr."
+      Multiple: "Apr."
+    - Term @758:5
+      Name: "month-05"
+      Form: "short"
+      Single: "May"
+      Multiple: "May"
+    - Term @759:5
+      Name: "month-06"
+      Form: "short"
+      Single: "Jun."
+      Multiple: "Jun."
+    - Term @760:5
+      Name: "month-07"
+      Form: "short"
+      Single: "Jul."
+      Multiple: "Jul."
+    - Term @761:5
+      Name: "month-08"
+      Form: "short"
+      Single: "Aug."
+      Multiple: "Aug."
+    - Term @762:5
+      Name: "month-09"
+      Form: "short"
+      Single: "Sep."
+      Multiple: "Sep."
+    - Term @763:5
+      Name: "month-10"
+      Form: "short"
+      Single: "Oct."
+      Multiple: "Oct."
+    - Term @764:5
+      Name: "month-11"
+      Form: "short"
+      Single: "Nov."
+      Multiple: "Nov."
+    - Term @765:5
+      Name: "month-12"
+      Form: "short"
+      Single: "Dec."
+      Multiple: "Dec."
+    - Term @768:5
+      Name: "season-01"
+      Form: "long"
+      Single: "Spring"
+      Multiple: "Spring"
+    - Term @769:5
+      Name: "season-02"
+      Form: "long"
+      Single: "Summer"
+      Multiple: "Summer"
+    - Term @770:5
+      Name: "season-03"
+      Form: "long"
+      Single: "Autumn"
+      Multiple: "Autumn"
+    - Term @771:5
+      Name: "season-04"
+      Form: "long"
+      Single: "Winter"
+      Multiple: "Winter"

@@ -1,0 +1,4688 @@
+Style @2:1
+  Class: "in-text"
+  Version: "1.0"
+  DemoteNonDroppingParticle: "never"
+  InitializeWithHyphen: true
+  PageRangeFormat: "expanded"
+  Info: Info
+    Title: "American Psychological Association 7th edition"
+    TitleShort: "APA"
+    ID: "http://www.zotero.org/styles/apa"
+    Authors:
+      - Person
+        Name: "Brenton M. Wiernik"
+        Email: "zotero@wiernik.org"
+    CitationFormat: "author-date"
+    Fields:
+      - "psychology"
+      - "generic-base"
+    Links:
+      - Link
+        Href: "http://www.zotero.org/styles/apa"
+        Rel: "self"
+      - Link
+        Href: "http://www.zotero.org/styles/apa-6th-edition"
+        Rel: "template"
+      - Link
+        Href: "https://apastyle.apa.org/style-grammar-guidelines/references/examples"
+        Rel: "documentation"
+    Rights: "This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License"
+    RightsLicense: "http://creativecommons.org/licenses/by-sa/3.0/"
+    Updated: "2024-07-09T20:08:41+00:00"
+  Locales:
+    - Locale @20:3
+      Lang: "en"
+      Terms:
+        - Term @22:7
+          Name: "editortranslator"
+          Form: "short"
+          Single: "ed. & trans."
+          Multiple: "eds. & trans."
+        - Term @26:7
+          Name: "editor-translator"
+          Form: "short"
+          Single: "ed. & trans."
+          Multiple: "eds. & trans."
+        - Term @30:7
+          Name: "translator"
+          Form: "short"
+          Single: "trans."
+          Multiple: "trans."
+        - Term @31:7
+          Name: "interviewer"
+          Form: "short"
+          Single: "interviewer"
+          Multiple: "interviewers"
+        - Term @35:7
+          Name: "collection-editor"
+          Form: "short"
+          Single: "ed."
+          Multiple: "eds."
+        - Term @39:7
+          Name: "performer"
+          Form: "verb"
+          Single: "recorded by"
+          Multiple: "recorded by"
+        - Term @40:7
+          Name: "circa"
+          Form: "short"
+          Single: "ca."
+          Multiple: "ca."
+        - Term @41:7
+          Name: "bc"
+          Form: "long"
+          Single: " B.C.E."
+          Multiple: " B.C.E."
+        - Term @42:7
+          Name: "ad"
+          Form: "long"
+          Single: " C.E."
+          Multiple: " C.E."
+        - Term @43:7
+          Name: "issue"
+          Form: "long"
+          Single: "issue"
+          Multiple: "issues"
+        - Term @47:7
+          Name: "software"
+          Form: "long"
+          Single: "computer software"
+          Multiple: "computer software"
+        - Term @48:7
+          Name: "at"
+          Form: "long"
+          Single: "before the"
+          Multiple: "before the"
+        - Term @49:7
+          Name: "collection"
+          Form: "long"
+          Single: "archival collection"
+          Multiple: "archival collection"
+        - Term @50:7
+          Name: "post"
+          Form: "long"
+          Single: "online post"
+          Multiple: "online post"
+        - Term @51:7
+          Name: "at"
+          Form: "long"
+          Single: "before the"
+          Multiple: "before the"
+        - Term @52:7
+          Name: "hearing"
+          Form: "verb"
+          Single: "testimony of"
+          Multiple: "testimony of"
+        - Term @53:7
+          Name: "review-of"
+          Form: "long"
+          Single: "review of the"
+          Multiple: "review of the"
+        - Term @54:7
+          Name: "review-of"
+          Form: "short"
+          Single: "review of"
+          Multiple: "review of"
+    - Locale @57:3
+      Lang: "da"
+      Terms:
+        - Term @59:7
+          Name: "et-al"
+          Form: "long"
+          Single: "et al."
+          Multiple: "et al."
+    - Locale @62:3
+      Lang: "de"
+      Terms:
+        - Term @64:7
+          Name: "et-al"
+          Form: "long"
+          Single: "et al."
+          Multiple: "et al."
+    - Locale @67:3
+      Lang: "es"
+      Terms:
+        - Term @69:7
+          Name: "from"
+          Form: "long"
+          Single: "de"
+          Multiple: "de"
+    - Locale @72:3
+      Lang: "fr"
+      Terms:
+        - Term @74:7
+          Name: "editor"
+          Form: "short"
+          Single: "éd."
+          Multiple: "éds."
+    - Locale @80:3
+      Lang: "nb"
+      Terms:
+        - Term @82:7
+          Name: "et-al"
+          Form: "long"
+          Single: "et al."
+          Multiple: "et al."
+    - Locale @85:3
+      Lang: "nl"
+      Terms:
+        - Term @87:7
+          Name: "et-al"
+          Form: "long"
+          Single: "et al."
+          Multiple: "et al."
+    - Locale @90:3
+      Lang: "nn"
+      Terms:
+        - Term @92:7
+          Name: "et-al"
+          Form: "long"
+          Single: "et al."
+          Multiple: "et al."
+    - Locale @95:3
+      Lang: "ro"
+      Terms:
+        - Term @97:7
+          Name: "et-al"
+          Form: "long"
+          Single: "et al."
+          Multiple: "et al."
+  Macros:
+    "access": Macro @1683:3
+      Name: "access"
+      Children:
+        - Choose @1684:5
+          Branches:
+            - Branch @1685:7
+              Match: "any"
+              Variable:
+                - "DOI"
+              Children:
+                - Text @1686:9
+                  Source: "variable"
+                  Name: "DOI"
+                  Form: "long"
+                  Prefix: "https://doi.org/"
+            - Branch @1688:7
+              Match: "all"
+              Variable:
+                - "URL"
+              Children:
+                - Group @1689:9
+                  Delimiter: " "
+                  Children:
+                    - Choose @1690:11
+                      Branches:
+                        - Branch @1691:13
+                          Match: "none"
+                          Variable:
+                            - "issued"
+                            - "status"
+                          Children:
+                            - Group @1692:15
+                              Delimiter: " "
+                              Children:
+                                - Text @1693:17
+                                  Source: "term"
+                                  Name: "retrieved"
+                                  Form: "long"
+                                  TextCase: "capitalize-first"
+                                - Date @1694:17
+                                  Variable: "accessed"
+                                  Form: "text"
+                                  DateParts: "year-month-day"
+                                  Suffix: ","
+                                - Text @1695:17
+                                  Source: "term"
+                                  Name: "from"
+                                  Form: "long"
+                    - Text @1699:11
+                      Source: "variable"
+                      Name: "URL"
+                      Form: "long"
+    "author-bib": Macro @139:3
+      Name: "author-bib"
+      Children:
+        - Group @140:5
+          Delimiter: " "
+          Children:
+            - Names @141:7
+              Variables:
+                - "composer"
+              Name: Name @142:9
+                Options: NameOptions
+                  And: "symbol"
+                  DelimiterPrecedesLast: "always"
+                  InitializeWith: ". "
+                  NameAsSortOrder: "all"
+                  SortSeparator: ", "
+                  Delimiter: ", "
+              Substitute: Substitute @143:9
+                Children:
+                  - Names @144:11
+                    Variables:
+                      - "author"
+                  - Names @146:11
+                    Variables:
+                      - "illustrator"
+                  - Choose @148:11
+                    Branches:
+                      - Branch @149:13
+                        Match: "all"
+                        Type:
+                          - "broadcast"
+                        Children:
+                          - Names @150:15
+                            Variables:
+                              - "script-writer"
+                              - "director"
+                            Name: Name @152:17
+                              Options: NameOptions
+                                And: "symbol"
+                                DelimiterPrecedesLast: "always"
+                                InitializeWith: ". "
+                                NameAsSortOrder: "all"
+                                SortSeparator: ", "
+                                Delimiter: ", "
+                            Label: Label @153:17
+                              Form: "long"
+                              Plural: "contextual"
+                              Prefix: " ("
+                              Suffix: ")"
+                              TextCase: "title"
+                            Delimiter: ", & "
+                  - Names @157:11
+                    Variables:
+                      - "director"
+                    Name: Name @159:13
+                      Options: NameOptions
+                        And: "symbol"
+                        DelimiterPrecedesLast: "always"
+                        InitializeWith: ". "
+                        NameAsSortOrder: "all"
+                        SortSeparator: ", "
+                        Delimiter: ", "
+                    Label: Label @160:13
+                      Form: "long"
+                      Plural: "contextual"
+                      Prefix: " ("
+                      Suffix: ")"
+                      TextCase: "title"
+                  - Names @163:11
+                    Variables:
+                      - "guest"
+                      - "host"
+                    Name: Name @164:13
+                      Options: NameOptions
+                        And: "symbol"
+                        DelimiterPrecedesLast: "always"
+                        InitializeWith: ". "
+                        NameAsSortOrder: "all"
+                        SortSeparator: ", "
+                        Delimiter: ", "
+                    Label: Label @165:13
+                      Form: "long"
+                      Plural: "contextual"
+                      Prefix: " ("
+                      Suffix: ")"
+                      TextCase: "title"
+                    Delimiter: ", & "
+                  - Names @167:11
+                    Variables:
+                      - "producer"
+                    Name: Name @169:13
+                      Options: NameOptions
+                        And: "symbol"
+                        DelimiterPrecedesLast: "always"
+                        InitializeWith: ". "
+                        NameAsSortOrder: "all"
+                        SortSeparator: ", "
+                        Delimiter: ", "
+                    Label: Label @170:13
+                      Form: "long"
+                      Plural: "contextual"
+                      Prefix: " ("
+                      Suffix: ")"
+                      TextCase: "title"
+                  - Choose @172:11
+                    Branches:
+                      - Branch @173:13
+                        Match: "all"
+                        Variable:
+                          - "container-title"
+                        Children:
+                          - Choose @174:15
+                            Branches:
+                              - Branch @175:17
+                                Match: "any"
+                                Type:
+                                  - "book"
+                                  - "classic"
+                                  - "collection"
+                                  - "entry"
+                                  - "entry-dictionary"
+                                  - "entry-encyclopedia"
+                                Children:
+                                  - Choose @178:19
+                                    Branches:
+                                      - Branch @179:21
+                                        Match: "all"
+                                        Variable:
+                                          - "title"
+                                        Children:
+                                          - Group @180:23
+                                            Delimiter: " "
+                                            Children:
+                                              - Text @181:25
+                                                Source: "macro"
+                                                Name: "title"
+                                              - Text @182:25
+                                                Source: "macro"
+                                                Name: "parenthetical"
+                                    Else:
+                                      - Text @186:23
+                                        Source: "macro"
+                                        Name: "title-and-descriptions"
+                  - Names @193:11
+                    Variables:
+                      - "executive-producer"
+                    Name: Name @194:13
+                      Options: NameOptions
+                        And: "symbol"
+                        DelimiterPrecedesLast: "always"
+                        InitializeWith: ". "
+                        NameAsSortOrder: "all"
+                        SortSeparator: ", "
+                        Delimiter: ", "
+                    Label: Label @195:13
+                      Form: "long"
+                      Plural: "contextual"
+                      Prefix: " ("
+                      Suffix: ")"
+                      TextCase: "title"
+                  - Names @197:11
+                    Variables:
+                      - "series-creator"
+                    Name: Name @198:13
+                      Options: NameOptions
+                        And: "symbol"
+                        DelimiterPrecedesLast: "always"
+                        InitializeWith: ". "
+                        NameAsSortOrder: "all"
+                        SortSeparator: ", "
+                        Delimiter: ", "
+                    Label: Label @199:13
+                      Form: "long"
+                      Plural: "contextual"
+                      Prefix: " ("
+                      Suffix: ")"
+                      TextCase: "title"
+                  - Names @201:11
+                    Variables:
+                      - "editor-translator"
+                    Name: Name @202:13
+                      Options: NameOptions
+                        And: "symbol"
+                        DelimiterPrecedesLast: "always"
+                        InitializeWith: ". "
+                        NameAsSortOrder: "all"
+                        SortSeparator: ", "
+                        Delimiter: ", "
+                    Label: Label @203:13
+                      Form: "short"
+                      Plural: "contextual"
+                      Prefix: " ("
+                      Suffix: ")"
+                      TextCase: "title"
+                  - Names @206:11
+                    Variables:
+                      - "editor"
+                    Name: Name @207:13
+                      Options: NameOptions
+                        And: "symbol"
+                        DelimiterPrecedesLast: "always"
+                        InitializeWith: ". "
+                        NameAsSortOrder: "all"
+                        SortSeparator: ", "
+                        Delimiter: ", "
+                    Label: Label @208:13
+                      Form: "short"
+                      Plural: "contextual"
+                      Prefix: " ("
+                      Suffix: ")"
+                      TextCase: "title"
+                  - Names @210:11
+                    Variables:
+                      - "editorial-director"
+                    Name: Name @211:13
+                      Options: NameOptions
+                        And: "symbol"
+                        DelimiterPrecedesLast: "always"
+                        InitializeWith: ". "
+                        NameAsSortOrder: "all"
+                        SortSeparator: ", "
+                        Delimiter: ", "
+                    Label: Label @212:13
+                      Form: "short"
+                      Plural: "contextual"
+                      Prefix: " ("
+                      Suffix: ")"
+                      TextCase: "title"
+                  - Names @214:11
+                    Variables:
+                      - "compiler"
+                    Name: Name @215:13
+                      Options: NameOptions
+                        And: "symbol"
+                        DelimiterPrecedesLast: "always"
+                        InitializeWith: ". "
+                        NameAsSortOrder: "all"
+                        SortSeparator: ", "
+                        Delimiter: ", "
+                    Label: Label @216:13
+                      Form: "long"
+                      Plural: "contextual"
+                      Prefix: " ("
+                      Suffix: ")"
+                      TextCase: "title"
+                  - Choose @218:11
+                    Branches:
+                      - Branch @219:13
+                        Match: "any"
+                        Type:
+                          - "event"
+                          - "performance"
+                          - "speech"
+                        Children:
+                          - Names @220:15
+                            Variables:
+                              - "chair"
+                            Name: Name @221:17
+                              Options: NameOptions
+                                And: "symbol"
+                                DelimiterPrecedesLast: "always"
+                                InitializeWith: ". "
+                                NameAsSortOrder: "all"
+                                SortSeparator: ", "
+                                Delimiter: ", "
+                            Label: Label @222:17
+                              Form: "long"
+                              Plural: "contextual"
+                              Prefix: " ("
+                              Suffix: ")"
+                              TextCase: "title"
+                          - Names @224:15
+                            Variables:
+                              - "organizer"
+                            Name: Name @225:17
+                              Options: NameOptions
+                                And: "symbol"
+                                DelimiterPrecedesLast: "always"
+                                InitializeWith: ". "
+                                NameAsSortOrder: "all"
+                                SortSeparator: ", "
+                                Delimiter: ", "
+                            Label: Label @226:17
+                              Form: "long"
+                              Plural: "contextual"
+                              Prefix: " ("
+                              Suffix: ")"
+                              TextCase: "title"
+                  - Names @230:11
+                    Variables:
+                      - "curator"
+                    Name: Name @231:13
+                      Options: NameOptions
+                        And: "symbol"
+                        DelimiterPrecedesLast: "always"
+                        InitializeWith: ". "
+                        NameAsSortOrder: "all"
+                        SortSeparator: ", "
+                        Delimiter: ", "
+                    Label: Label @232:13
+                      Form: "long"
+                      Plural: "contextual"
+                      Prefix: " ("
+                      Suffix: ")"
+                      TextCase: "title"
+                  - Names @234:11
+                    Variables:
+                      - "collection-editor"
+                    Name: Name @235:13
+                      Options: NameOptions
+                        And: "symbol"
+                        DelimiterPrecedesLast: "always"
+                        InitializeWith: ". "
+                        NameAsSortOrder: "all"
+                        SortSeparator: ", "
+                        Delimiter: ", "
+                    Label: Label @236:13
+                      Form: "short"
+                      Plural: "contextual"
+                      Prefix: " ("
+                      Suffix: ")"
+                      TextCase: "title"
+                  - Choose @238:11
+                    Branches:
+                      - Branch @239:13
+                        Match: "all"
+                        Variable:
+                          - "title"
+                        Children:
+                          - Group @242:15
+                            Delimiter: " "
+                            Children:
+                              - Text @243:17
+                                Source: "macro"
+                                Name: "title"
+                              - Text @244:17
+                                Source: "macro"
+                                Name: "parenthetical"
+                    Else:
+                      - Text @249:15
+                        Source: "macro"
+                        Name: "title-and-descriptions"
+              Delimiter: ", "
+            - Choose @254:7
+              Branches:
+                - Branch @256:9
+                  Match: "any"
+                  Type:
+                    - "book"
+                    - "classic"
+                    - "collection"
+                  Children:
+                    - Names @257:11
+                      Variables:
+                        - "contributor"
+                      Name: Name @259:13
+                        Options: NameOptions
+                          And: "symbol"
+                          DelimiterPrecedesLast: "always"
+                          InitializeWith: ". "
+                          NameAsSortOrder: "all"
+                          SortSeparator: ", "
+                          Delimiter: ", "
+                      Label: Label @258:13
+                        Form: "verb"
+                        Plural: "contextual"
+                        Suffix: " "
+                      LabelBeforeName: true
+                      Prefix: "("
+                      Suffix: ")"
+    "author-intext": Macro @265:3
+      Name: "author-intext"
+      Children:
+        - Choose @266:5
+          Branches:
+            - Branch @267:7
+              Match: "any"
+              Type:
+                - "bill"
+                - "hearing"
+                - "legal_case"
+                - "legislation"
+                - "regulation"
+                - "treaty"
+              Children:
+                - Text @268:9
+                  Source: "macro"
+                  Name: "title-intext"
+            - Branch @270:7
+              Match: "any"
+              Type:
+                - "interview"
+                - "personal_communication"
+              Children:
+                - Choose @271:9
+                  Branches:
+                    - Branch @274:11
+                      Match: "none"
+                      Variable:
+                        - "archive"
+                        - "container-title"
+                        - "DOI"
+                        - "publisher"
+                        - "URL"
+                      Children:
+                        - Group @275:13
+                          Delimiter: ", "
+                          Children:
+                            - Names @276:15
+                              Variables:
+                                - "author"
+                              Name: Name @277:17
+                                Options: NameOptions
+                                  And: "symbol"
+                                  InitializeWith: ". "
+                                  Delimiter: ", "
+                              Substitute: Substitute @278:17
+                                Children:
+                                  - Text @279:19
+                                    Source: "macro"
+                                    Name: "title-intext"
+                            - Text @282:15
+                              Source: "term"
+                              Name: "personal-communication"
+                              Form: "long"
+                  Else:
+                    - Names @286:13
+                      Variables:
+                        - "author"
+                      Name: Name @287:15
+                        Options: NameOptions
+                          And: "symbol"
+                          InitializeWith: ". "
+                          Form: "short"
+                          Delimiter: ", "
+                      Substitute: Substitute @288:15
+                        Children:
+                          - Text @289:17
+                            Source: "macro"
+                            Name: "title-intext"
+                      Delimiter: ", "
+          Else:
+            - Names @296:9
+              Variables:
+                - "composer"
+              Name: Name @297:11
+                Options: NameOptions
+                  And: "symbol"
+                  InitializeWith: ". "
+                  Form: "short"
+                  Delimiter: ", "
+              Substitute: Substitute @298:11
+                Children:
+                  - Names @299:13
+                    Variables:
+                      - "author"
+                  - Names @300:13
+                    Variables:
+                      - "illustrator"
+                  - Choose @302:13
+                    Branches:
+                      - Branch @303:15
+                        Match: "all"
+                        Type:
+                          - "broadcast"
+                        Children:
+                          - Names @304:17
+                            Variables:
+                              - "script-writer"
+                              - "director"
+                            Delimiter: ", & "
+                  - Names @307:13
+                    Variables:
+                      - "director"
+                  - Names @309:13
+                    Variables:
+                      - "guest"
+                      - "host"
+                    Delimiter: ", & "
+                  - Names @310:13
+                    Variables:
+                      - "producer"
+                  - Choose @311:13
+                    Branches:
+                      - Branch @312:15
+                        Match: "all"
+                        Variable:
+                          - "container-title"
+                        Children:
+                          - Choose @313:17
+                            Branches:
+                              - Branch @314:19
+                                Match: "any"
+                                Type:
+                                  - "book"
+                                  - "classic"
+                                  - "collection"
+                                  - "entry"
+                                  - "entry-dictionary"
+                                  - "entry-encyclopedia"
+                                Children:
+                                  - Text @315:21
+                                    Source: "macro"
+                                    Name: "title-intext"
+                  - Names @320:13
+                    Variables:
+                      - "executive-producer"
+                  - Names @321:13
+                    Variables:
+                      - "series-creator"
+                  - Names @322:13
+                    Variables:
+                      - "editor"
+                  - Names @323:13
+                    Variables:
+                      - "editorial-director"
+                  - Names @324:13
+                    Variables:
+                      - "compiler"
+                  - Choose @325:13
+                    Branches:
+                      - Branch @326:15
+                        Match: "any"
+                        Type:
+                          - "event"
+                          - "performance"
+                          - "speech"
+                        Children:
+                          - Names @327:17
+                            Variables:
+                              - "chair"
+                          - Names @328:17
+                            Variables:
+                              - "organizer"
+                  - Names @331:13
+                    Variables:
+                      - "curator"
+                  - Text @332:13
+                    Source: "macro"
+                    Name: "title-intext"
+              Delimiter: ", "
+    "author-sort": Macro @338:3
+      Name: "author-sort"
+      Children:
+        - Choose @339:5
+          Branches:
+            - Branch @340:7
+              Match: "any"
+              Type:
+                - "bill"
+                - "hearing"
+                - "legal_case"
+                - "legislation"
+                - "regulation"
+                - "treaty"
+              Children:
+                - Text @341:9
+                  Source: "macro"
+                  Name: "title-legal"
+          Else:
+            - Text @344:9
+              Source: "macro"
+              Name: "author-bib"
+    "booklike-title": Macro @575:3
+      Name: "booklike-title"
+      Children:
+        - Choose @577:5
+          Branches:
+            - Branch @578:7
+              Match: "any"
+              Variable:
+                - "container-title"
+              Children:
+                - Text @579:9
+                  Source: "variable"
+                  Name: "title"
+                  Form: "long"
+          Else:
+            - Text @583:9
+              Source: "macro"
+              Name: "title-plus-volume-title"
+              FontStyle: "italic"
+    "bracketed": Macro @802:3
+      Name: "bracketed"
+      Children:
+        - Group @805:5
+          Prefix: "["
+          Suffix: "]"
+          Children:
+            - Choose @806:7
+              Branches:
+                - Branch @807:9
+                  Match: "any"
+                  Type:
+                    - "review"
+                    - "review-book"
+                  Variable:
+                    - "reviewed-author"
+                    - "reviewed-genre"
+                    - "reviewed-title"
+                  Children:
+                    - Text @808:11
+                      Source: "macro"
+                      Name: "reviewed-item"
+                - Branch @810:9
+                  Match: "all"
+                  Type:
+                    - "thesis"
+                  Children:
+                    - Group @812:11
+                      Delimiter: "; "
+                      Children:
+                        - Choose @813:13
+                          Branches:
+                            - Branch @814:15
+                              Match: "none"
+                              Variable:
+                                - "number"
+                              Children:
+                                - Group @815:17
+                                  Delimiter: ", "
+                                  Children:
+                                    - Text @816:19
+                                      Source: "variable"
+                                      Name: "genre"
+                                      Form: "long"
+                                      TextCase: "capitalize-first"
+                                    - Choose @817:19
+                                      Branches:
+                                        - Branch @818:21
+                                          Match: "any"
+                                          Variable:
+                                            - "archive"
+                                            - "DOI"
+                                            - "URL"
+                                          Children:
+                                            - Text @820:23
+                                              Source: "variable"
+                                              Name: "publisher"
+                                              Form: "long"
+                        - Text @826:13
+                          Source: "variable"
+                          Name: "medium"
+                          Form: "long"
+                          TextCase: "capitalize-first"
+                - Branch @829:9
+                  Match: "any"
+                  Type:
+                    - "interview"
+                  Variable:
+                    - "interviewer"
+                  Children:
+                    - Choose @831:11
+                      Branches:
+                        - Branch @832:13
+                          Match: "all"
+                          Variable:
+                            - "title"
+                          Children:
+                            - Text @833:15
+                              Source: "macro"
+                              Name: "format"
+                        - Branch @835:13
+                          Match: "all"
+                          Variable:
+                            - "genre"
+                          Children:
+                            - Group @836:15
+                              Delimiter: "; "
+                              Children:
+                                - Group @837:17
+                                  Delimiter: " "
+                                  Children:
+                                    - Text @838:19
+                                      Source: "variable"
+                                      Name: "genre"
+                                      Form: "long"
+                                      TextCase: "capitalize-first"
+                                    - Group @839:19
+                                      Delimiter: " "
+                                      Children:
+                                        - Text @840:21
+                                          Source: "term"
+                                          Name: "container-author"
+                                          Form: "verb"
+                                        - Names @841:21
+                                          Variables:
+                                            - "interviewer"
+                                          Name: Name @842:23
+                                            Options: NameOptions
+                                              And: "symbol"
+                                              InitializeWith: ". "
+                                              Delimiter: ", "
+                        - Branch @848:13
+                          Match: "all"
+                          Variable:
+                            - "interviewer"
+                          Children:
+                            - Group @849:15
+                              Delimiter: "; "
+                              Children:
+                                - Names @850:17
+                                  Variables:
+                                    - "interviewer"
+                                  Name: Name @852:19
+                                    Options: NameOptions
+                                      And: "symbol"
+                                      InitializeWith: ". "
+                                      Delimiter: ", "
+                                  Label: Label @851:19
+                                    Form: "verb"
+                                    Plural: "contextual"
+                                    Suffix: " "
+                                    TextCase: "capitalize-first"
+                                  LabelBeforeName: true
+                                - Text @854:17
+                                  Source: "variable"
+                                  Name: "medium"
+                                  Form: "long"
+                                  TextCase: "capitalize-first"
+                      Else:
+                        - Text @858:15
+                          Source: "macro"
+                          Name: "format"
+                - Branch @862:9
+                  Match: "all"
+                  Type:
+                    - "personal_communication"
+                  Children:
+                    - Choose @864:11
+                      Branches:
+                        - Branch @865:13
+                          Match: "all"
+                          Variable:
+                            - "recipient"
+                          Children:
+                            - Group @866:15
+                              Delimiter: "; "
+                              Children:
+                                - Group @867:17
+                                  Delimiter: " "
+                                  Children:
+                                    - Choose @868:19
+                                      Branches:
+                                        - Branch @869:21
+                                          Match: "none"
+                                          Variable:
+                                            - "number"
+                                          Children:
+                                            - Choose @870:23
+                                              Branches:
+                                                - Branch @871:25
+                                                  Match: "all"
+                                                  Variable:
+                                                    - "genre"
+                                                  Children:
+                                                    - Text @872:27
+                                                      Source: "variable"
+                                                      Name: "genre"
+                                                      Form: "long"
+                                                      TextCase: "capitalize-first"
+                                                - Branch @874:25
+                                                  Match: "all"
+                                                  Variable:
+                                                    - "medium"
+                                                  Children:
+                                                    - Text @875:27
+                                                      Source: "variable"
+                                                      Name: "medium"
+                                                      Form: "long"
+                                                      TextCase: "capitalize-first"
+                                              Else:
+                                                - Text @878:27
+                                                  Source: "term"
+                                                  Name: "letter"
+                                                  Form: "long"
+                                                  TextCase: "capitalize-first"
+                                      Else:
+                                        - Choose @883:23
+                                          Branches:
+                                            - Branch @884:25
+                                              Match: "all"
+                                              Variable:
+                                                - "medium"
+                                              Children:
+                                                - Text @885:27
+                                                  Source: "variable"
+                                                  Name: "medium"
+                                                  Form: "long"
+                                                  TextCase: "capitalize-first"
+                                          Else:
+                                            - Text @888:27
+                                              Source: "term"
+                                              Name: "letter"
+                                              Form: "long"
+                                              TextCase: "capitalize-first"
+                                    - Names @893:19
+                                      Variables:
+                                        - "recipient"
+                                      Name: Name @895:21
+                                        Options: NameOptions
+                                          And: "symbol"
+                                          Delimiter: ", "
+                                      Label: Label @894:21
+                                        Form: "verb"
+                                        Plural: "contextual"
+                                        Suffix: " "
+                                      LabelBeforeName: true
+                                      Delimiter: ", "
+                                - Choose @898:17
+                                  Branches:
+                                    - Branch @899:19
+                                      Match: "any"
+                                      Variable:
+                                        - "genre"
+                                      Children:
+                                        - Choose @900:21
+                                          Branches:
+                                            - Branch @901:23
+                                              Match: "none"
+                                              Variable:
+                                                - "number"
+                                              Children:
+                                                - Text @902:25
+                                                  Source: "variable"
+                                                  Name: "medium"
+                                                  Form: "long"
+                                                  TextCase: "capitalize-first"
+                      Else:
+                        - Text @910:15
+                          Source: "macro"
+                          Name: "format"
+                - Branch @914:9
+                  Match: "all"
+                  Type:
+                    - "song"
+                  Variable:
+                    - "composer"
+                  Children:
+                    - Group @916:11
+                      Delimiter: "; "
+                      Children:
+                        - Choose @917:13
+                          Branches:
+                            - Branch @918:15
+                              Match: "none"
+                              Variable:
+                                - "number"
+                              Children:
+                                - Group @919:17
+                                  Delimiter: " "
+                                  Children:
+                                    - Choose @920:19
+                                      Branches:
+                                        - Branch @921:21
+                                          Match: "all"
+                                          Variable:
+                                            - "genre"
+                                          Children:
+                                            - Text @922:23
+                                              Source: "variable"
+                                              Name: "genre"
+                                              Form: "long"
+                                              TextCase: "capitalize-first"
+                                            - Group @923:23
+                                              Delimiter: " "
+                                              Children:
+                                                - Text @924:25
+                                                  Source: "term"
+                                                  Name: "performer"
+                                                  Form: "verb"
+                                                - Names @925:25
+                                                  Variables:
+                                                    - "author"
+                                                  Name: Name @926:27
+                                                    Options: NameOptions
+                                                      And: "symbol"
+                                                      InitializeWith: ". "
+                                                      Delimiter: ", "
+                                                  Substitute: Substitute @927:27
+                                                    Children:
+                                                      - Names @928:29
+                                                        Variables:
+                                                          - "performer"
+                                        - Branch @933:21
+                                          Match: "all"
+                                          Variable:
+                                            - "medium"
+                                          Children:
+                                            - Text @934:23
+                                              Source: "variable"
+                                              Name: "medium"
+                                              Form: "long"
+                                              TextCase: "capitalize-first"
+                                            - Group @935:23
+                                              Delimiter: " "
+                                              Children:
+                                                - Text @936:25
+                                                  Source: "term"
+                                                  Name: "performer"
+                                                  Form: "verb"
+                                                - Names @937:25
+                                                  Variables:
+                                                    - "author"
+                                                  Name: Name @938:27
+                                                    Options: NameOptions
+                                                      And: "symbol"
+                                                      InitializeWith: ". "
+                                                      Delimiter: ", "
+                                                  Substitute: Substitute @939:27
+                                                    Children:
+                                                      - Names @940:29
+                                                        Variables:
+                                                          - "performer"
+                                      Else:
+                                        - Text @946:23
+                                          Source: "term"
+                                          Name: "performer"
+                                          Form: "verb"
+                                          TextCase: "capitalize-first"
+                                        - Names @947:23
+                                          Variables:
+                                            - "author"
+                                          Name: Name @948:25
+                                            Options: NameOptions
+                                              And: "symbol"
+                                              InitializeWith: ". "
+                                              Delimiter: ", "
+                                          Substitute: Substitute @949:25
+                                            Children:
+                                              - Names @950:27
+                                                Variables:
+                                                  - "performer"
+                          Else:
+                            - Group @958:17
+                              Delimiter: " "
+                              Children:
+                                - Choose @959:19
+                                  Branches:
+                                    - Branch @960:21
+                                      Match: "all"
+                                      Variable:
+                                        - "medium"
+                                      Children:
+                                        - Text @961:23
+                                          Source: "variable"
+                                          Name: "medium"
+                                          Form: "long"
+                                          TextCase: "capitalize-first"
+                                        - Group @962:23
+                                          Delimiter: " "
+                                          Children:
+                                            - Text @963:25
+                                              Source: "term"
+                                              Name: "performer"
+                                              Form: "verb"
+                                            - Names @964:25
+                                              Variables:
+                                                - "author"
+                                              Name: Name @965:27
+                                                Options: NameOptions
+                                                  And: "symbol"
+                                                  InitializeWith: ". "
+                                                  Delimiter: ", "
+                                              Substitute: Substitute @966:27
+                                                Children:
+                                                  - Names @967:29
+                                                    Variables:
+                                                      - "performer"
+                                  Else:
+                                    - Text @973:23
+                                      Source: "term"
+                                      Name: "performer"
+                                      Form: "verb"
+                                      TextCase: "capitalize-first"
+                                    - Names @974:23
+                                      Variables:
+                                        - "author"
+                                      Name: Name @975:25
+                                        Options: NameOptions
+                                          And: "symbol"
+                                          InitializeWith: ". "
+                                          Delimiter: ", "
+                                      Substitute: Substitute @976:25
+                                        Children:
+                                          - Names @977:27
+                                            Variables:
+                                              - "performer"
+                        - Choose @985:13
+                          Branches:
+                            - Branch @986:15
+                              Match: "any"
+                              Variable:
+                                - "genre"
+                              Children:
+                                - Choose @987:17
+                                  Branches:
+                                    - Branch @988:19
+                                      Match: "none"
+                                      Variable:
+                                        - "number"
+                                      Children:
+                                        - Text @989:21
+                                          Source: "variable"
+                                          Name: "medium"
+                                          Form: "long"
+                                          TextCase: "capitalize-first"
+                - Branch @996:9
+                  Match: "none"
+                  Variable:
+                    - "container-title"
+                  Children:
+                    - Text @998:11
+                      Source: "macro"
+                      Name: "format"
+              Else:
+                - Choose @1003:11
+                  Branches:
+                    - Branch @1004:13
+                      Match: "any"
+                      Type:
+                        - "event"
+                        - "paper-conference"
+                        - "performance"
+                        - "speech"
+                      Children:
+                        - Choose @1005:15
+                          Branches:
+                            - Branch @1006:17
+                              Match: "any"
+                              Variable:
+                                - "collection-editor"
+                                - "compiler"
+                                - "editor"
+                                - "editorial-director"
+                                - "issue"
+                                - "page"
+                                - "volume"
+                              Children:
+                                - Text @1007:19
+                                  Source: "macro"
+                                  Name: "format"
+                    - Branch @1011:13
+                      Match: "none"
+                      Type:
+                        - "document"
+                        - "report"
+                        - "software"
+                        - "standard"
+                      Children:
+                        - Text @1012:15
+                          Source: "macro"
+                          Name: "format"
+    "bracketed-container": Macro @1134:3
+      Name: "bracketed-container"
+      Children:
+        - Group @1135:5
+          Prefix: "["
+          Suffix: "]"
+          Children:
+            - Choose @1136:7
+              Branches:
+                - Branch @1137:9
+                  Match: "any"
+                  Type:
+                    - "event"
+                    - "paper-conference"
+                    - "performance"
+                    - "speech"
+                  Children:
+                    - Choose @1139:11
+                      Branches:
+                        - Branch @1140:13
+                          Match: "none"
+                          Variable:
+                            - "collection-editor"
+                            - "compiler"
+                            - "editor"
+                            - "editorial-director"
+                            - "issue"
+                            - "page"
+                            - "volume"
+                          Children:
+                            - Text @1141:15
+                              Source: "macro"
+                              Name: "format"
+                - Branch @1145:9
+                  Match: "all"
+                  Type:
+                    - "software"
+                  Children:
+                    - Text @1147:11
+                      Source: "macro"
+                      Name: "format"
+                - Branch @1149:9
+                  Match: "all"
+                  Type:
+                    - "document"
+                    - "report"
+                    - "standard"
+                  Children:
+                    - Text @1151:11
+                      Source: "macro"
+                      Name: "format"
+    "bracketed-intext": Macro @1019:3
+      Name: "bracketed-intext"
+      Children:
+        - Group @1020:5
+          Prefix: "["
+          Suffix: "]"
+          Children:
+            - Choose @1021:7
+              Branches:
+                - Branch @1022:9
+                  Match: "any"
+                  Variable:
+                    - "reviewed-title"
+                  Children:
+                    - Group @1023:11
+                      Delimiter: " "
+                      Children:
+                        - Text @1024:13
+                          Source: "term"
+                          Name: "review-of"
+                          Form: "long"
+                          TextCase: "capitalize-first"
+                        - Text @1025:13
+                          Source: "macro"
+                          Name: "reviewed-title-intext"
+                - Branch @1028:9
+                  Match: "any"
+                  Type:
+                    - "interview"
+                  Variable:
+                    - "interviewer"
+                  Children:
+                    - Names @1029:11
+                      Variables:
+                        - "interviewer"
+                      Name: Name @1031:13
+                        Options: NameOptions
+                          And: "symbol"
+                          InitializeWith: ". "
+                          Delimiter: ", "
+                      Label: Label @1030:13
+                        Form: "verb"
+                        Plural: "contextual"
+                        Suffix: " "
+                        TextCase: "capitalize-first"
+                      LabelBeforeName: true
+                      Substitute: Substitute @1032:13
+                        Children:
+                          - Text @1033:15
+                            Source: "macro"
+                            Name: "format-intext"
+                - Branch @1037:9
+                  Match: "all"
+                  Type:
+                    - "personal_communication"
+                  Children:
+                    - Choose @1039:11
+                      Branches:
+                        - Branch @1040:13
+                          Match: "all"
+                          Variable:
+                            - "recipient"
+                          Children:
+                            - Group @1041:15
+                              Delimiter: " "
+                              Children:
+                                - Choose @1042:17
+                                  Branches:
+                                    - Branch @1043:19
+                                      Match: "none"
+                                      Variable:
+                                        - "number"
+                                      Children:
+                                        - Text @1044:21
+                                          Source: "variable"
+                                          Name: "genre"
+                                          Form: "long"
+                                          TextCase: "capitalize-first"
+                                  Else:
+                                    - Text @1047:21
+                                      Source: "term"
+                                      Name: "letter"
+                                      Form: "long"
+                                      TextCase: "capitalize-first"
+                                - Names @1050:17
+                                  Variables:
+                                    - "recipient"
+                                  Name: Name @1052:19
+                                    Options: NameOptions
+                                      And: "symbol"
+                                      Delimiter: ", "
+                                  Label: Label @1051:19
+                                    Form: "verb"
+                                    Plural: "contextual"
+                                    Suffix: " "
+                                  LabelBeforeName: true
+                                  Delimiter: ", "
+                      Else:
+                        - Text @1057:15
+                          Source: "macro"
+                          Name: "format-intext"
+              Else:
+                - Text @1062:11
+                  Source: "macro"
+                  Name: "format-intext"
+    "citation-locator": Macro @2073:3
+      Name: "citation-locator"
+      Children:
+        - Group @2075:5
+          Delimiter: " "
+          Children:
+            - Choose @2076:7
+              Branches:
+                - Branch @2077:9
+                  Match: "any"
+                  Locator:
+                    - "page"
+                    - "paragraph"
+                  Children:
+                    - Label @2078:11
+                      Variable: "locator"
+                      Form: "short"
+                      Plural: "contextual"
+              Else:
+                - Label @2081:11
+                  Variable: "locator"
+                  Form: "long"
+                  Plural: "contextual"
+                  TextCase: "capitalize-first"
+            - Text @2084:7
+              Source: "variable"
+              Name: "locator"
+              Form: "long"
+    "container": Macro @1497:3
+      Name: "container"
+      Children:
+        - Choose @1498:5
+          Branches:
+            - Branch @1499:7
+              Match: "any"
+              Type:
+                - "article-journal"
+                - "article-magazine"
+                - "article-newspaper"
+                - "periodical"
+                - "post-weblog"
+                - "review"
+                - "review-book"
+              Children:
+                - Text @1501:9
+                  Source: "macro"
+                  Name: "container-periodical"
+            - Branch @1503:7
+              Match: "all"
+              Type:
+                - "paper-conference"
+              Children:
+                - Choose @1505:9
+                  Branches:
+                    - Branch @1506:11
+                      Match: "any"
+                      Variable:
+                        - "editor"
+                        - "editorial-director"
+                        - "collection-editor"
+                        - "container-author"
+                      Children:
+                        - Text @1507:13
+                          Source: "macro"
+                          Name: "container-booklike"
+                  Else:
+                    - Text @1510:13
+                      Source: "macro"
+                      Name: "container-periodical"
+            - Branch @1514:7
+              Match: "none"
+              Type:
+                - "post"
+                - "webpage"
+              Children:
+                - Text @1516:9
+                  Source: "macro"
+                  Name: "container-booklike"
+    "container-booklike": Macro @1560:3
+      Name: "container-booklike"
+      Children:
+        - Choose @1561:5
+          Branches:
+            - Branch @1562:7
+              Match: "any"
+              Variable:
+                - "container-title"
+              Children:
+                - Group @1563:9
+                  Delimiter: " "
+                  Children:
+                    - Choose @1564:11
+                      Branches:
+                        - Branch @1565:13
+                          Match: "all"
+                          Type:
+                            - "song"
+                          Children:
+                            - Text @1566:15
+                              Source: "term"
+                              Name: "on"
+                              Form: "long"
+                              TextCase: "capitalize-first"
+                      Else:
+                        - Text @1569:15
+                          Source: "term"
+                          Name: "in"
+                          Form: "long"
+                          TextCase: "capitalize-first"
+                    - Group @1572:11
+                      Delimiter: ", "
+                      Children:
+                        - Names @1573:13
+                          Variables:
+                            - "executive-producer"
+                          Name: Name @1574:15
+                            Options: NameOptions
+                              And: "symbol"
+                              InitializeWith: ". "
+                              Delimiter: ", "
+                          Label: Label @1575:15
+                            Form: "long"
+                            Plural: "contextual"
+                            Prefix: " ("
+                            Suffix: ")"
+                            TextCase: "title"
+                          Substitute: Substitute @1576:15
+                            Children:
+                              - Names @1577:17
+                                Variables:
+                                  - "series-creator"
+                              - Names @1578:17
+                                Variables:
+                                  - "editor-translator"
+                                Name: Name @1579:19
+                                  Options: NameOptions
+                                    And: "symbol"
+                                    InitializeWith: ". "
+                                    Delimiter: ", "
+                                Label: Label @1580:19
+                                  Form: "short"
+                                  Plural: "contextual"
+                                  Prefix: " ("
+                                  Suffix: ")"
+                                  TextCase: "title"
+                              - Names @1585:17
+                                Variables:
+                                  - "editor"
+                                Name: Name @1586:19
+                                  Options: NameOptions
+                                    And: "symbol"
+                                    InitializeWith: ". "
+                                    Delimiter: ", "
+                                Label: Label @1587:19
+                                  Form: "short"
+                                  Plural: "contextual"
+                                  Prefix: " ("
+                                  Suffix: ")"
+                                  TextCase: "title"
+                              - Names @1589:17
+                                Variables:
+                                  - "editorial-director"
+                                Name: Name @1590:19
+                                  Options: NameOptions
+                                    And: "symbol"
+                                    InitializeWith: ". "
+                                    Delimiter: ", "
+                                Label: Label @1591:19
+                                  Form: "short"
+                                  Plural: "contextual"
+                                  Prefix: " ("
+                                  Suffix: ")"
+                                  TextCase: "title"
+                              - Names @1593:17
+                                Variables:
+                                  - "compiler"
+                              - Choose @1594:17
+                                Branches:
+                                  - Branch @1595:19
+                                    Match: "any"
+                                    Type:
+                                      - "event"
+                                      - "performance"
+                                      - "speech"
+                                    Children:
+                                      - Names @1596:21
+                                        Variables:
+                                          - "chair"
+                                      - Names @1597:21
+                                        Variables:
+                                          - "organizer"
+                              - Names @1600:17
+                                Variables:
+                                  - "curator"
+                              - Names @1601:17
+                                Variables:
+                                  - "collection-editor"
+                                Name: Name @1602:19
+                                  Options: NameOptions
+                                    And: "symbol"
+                                    InitializeWith: ". "
+                                    Delimiter: ", "
+                                Label: Label @1603:19
+                                  Form: "short"
+                                  Plural: "contextual"
+                                  Prefix: " ("
+                                  Suffix: ")"
+                                  TextCase: "title"
+                              - Names @1605:17
+                                Variables:
+                                  - "container-author"
+                        - Group @1608:13
+                          Delimiter: ": "
+                          FontStyle: "italic"
+                          Children:
+                            - Text @1609:15
+                              Source: "variable"
+                              Name: "container-title"
+                              Form: "long"
+                            - Text @1610:15
+                              Source: "macro"
+                              Name: "volume-title"
+                    - Text @1613:11
+                      Source: "macro"
+                      Name: "parenthetical-container"
+                    - Text @1614:11
+                      Source: "macro"
+                      Name: "bracketed-container"
+    "container-legal": Macro @1911:3
+      Name: "container-legal"
+      Children:
+        - Choose @1913:5
+          Branches:
+            - Branch @1914:7
+              Match: "all"
+              Type:
+                - "treaty"
+              Children:
+                - Group @1915:9
+                  Delimiter: " "
+                  Children:
+                    - Number @1916:11
+                      Variable: "volume"
+                      Form: "numeric"
+                    - Text @1917:11
+                      Source: "variable"
+                      Name: "container-title"
+                      Form: "long"
+                    - Choose @1918:11
+                      Branches:
+                        - Branch @1919:13
+                          Match: "any"
+                          Variable:
+                            - "page"
+                            - "page-first"
+                          Children:
+                            - Text @1920:15
+                              Source: "variable"
+                              Name: "page-first"
+                              Form: "long"
+                      Else:
+                        - Group @1923:15
+                          Delimiter: " "
+                          Children:
+                            - Label @1924:17
+                              Variable: "number"
+                              Form: "short"
+                              Plural: "contextual"
+                              TextCase: "capitalize-first"
+                            - Text @1925:17
+                              Source: "variable"
+                              Name: "number"
+                              Form: "long"
+            - Branch @1931:7
+              Match: "all"
+              Type:
+                - "legal_case"
+              Children:
+                - Group @1932:9
+                  Delimiter: " "
+                  Children:
+                    - Choose @1933:11
+                      Branches:
+                        - Branch @1934:13
+                          Match: "all"
+                          Variable:
+                            - "container-title"
+                          Children:
+                            - Group @1935:15
+                              Delimiter: " "
+                              Children:
+                                - Text @1936:17
+                                  Source: "variable"
+                                  Name: "volume"
+                                  Form: "long"
+                                - Text @1937:17
+                                  Source: "variable"
+                                  Name: "container-title"
+                                  Form: "long"
+                                - Group @1938:17
+                                  Delimiter: " "
+                                  Children:
+                                    - Label @1939:19
+                                      Variable: "section"
+                                      Form: "symbol"
+                                      Plural: "contextual"
+                                    - Text @1940:19
+                                      Source: "variable"
+                                      Name: "section"
+                                      Form: "long"
+                                - Choose @1942:17
+                                  Branches:
+                                    - Branch @1943:19
+                                      Match: "any"
+                                      Variable:
+                                        - "page"
+                                        - "page-first"
+                                      Children:
+                                        - Text @1944:21
+                                          Source: "variable"
+                                          Name: "page-first"
+                                          Form: "long"
+                                  Else:
+                                    - Text @1947:21
+                                      Source: "value"
+                                      Value: "___"
+                      Else:
+                        - Group @1953:15
+                          Delimiter: " "
+                          Children:
+                            - Label @1954:17
+                              Variable: "number"
+                              Form: "short"
+                              Plural: "contextual"
+                              TextCase: "capitalize-first"
+                            - Text @1955:17
+                              Source: "variable"
+                              Name: "number"
+                              Form: "long"
+            - Branch @1961:7
+              Match: "all"
+              Type:
+                - "bill"
+              Children:
+                - Group @1962:9
+                  Delimiter: ", "
+                  Children:
+                    - Group @1963:11
+                      Delimiter: " "
+                      Children:
+                        - Text @1964:13
+                          Source: "variable"
+                          Name: "genre"
+                          Form: "long"
+                        - Group @1965:13
+                          Delimiter: " "
+                          Children:
+                            - Choose @1966:15
+                              Branches:
+                                - Branch @1969:17
+                                  Match: "none"
+                                  Variable:
+                                    - "chapter-number"
+                                    - "container-title"
+                                  Children:
+                                    - Label @1971:19
+                                      Variable: "number"
+                                      Form: "short"
+                                      Plural: "contextual"
+                                      TextCase: "capitalize-first"
+                            - Text @1974:15
+                              Source: "variable"
+                              Name: "number"
+                              Form: "long"
+                    - Group @1977:11
+                      Delimiter: " "
+                      Children:
+                        - Text @1978:13
+                          Source: "variable"
+                          Name: "authority"
+                          Form: "long"
+                        - Text @1980:13
+                          Source: "variable"
+                          Name: "chapter-number"
+                          Form: "long"
+                    - Group @1982:11
+                      Delimiter: " "
+                      Children:
+                        - Text @1983:13
+                          Source: "variable"
+                          Name: "volume"
+                          Form: "long"
+                        - Text @1984:13
+                          Source: "variable"
+                          Name: "container-title"
+                          Form: "long"
+                        - Text @1985:13
+                          Source: "variable"
+                          Name: "page-first"
+                          Form: "long"
+            - Branch @1989:7
+              Match: "all"
+              Type:
+                - "hearing"
+              Children:
+                - Group @1990:9
+                  Delimiter: " "
+                  Children:
+                    - Text @1991:11
+                      Source: "variable"
+                      Name: "authority"
+                      Form: "long"
+                    - Text @1993:11
+                      Source: "variable"
+                      Name: "chapter-number"
+                      Form: "long"
+            - Branch @1996:7
+              Match: "all"
+              Type:
+                - "legislation"
+              Children:
+                - Choose @1997:9
+                  Branches:
+                    - Branch @1998:11
+                      Match: "all"
+                      Variable:
+                        - "number"
+                      Children:
+                        - Group @2000:13
+                          Delimiter: ", "
+                          Children:
+                            - Text @2001:15
+                              Source: "variable"
+                              Name: "number"
+                              Form: "long"
+                              Prefix: "Pub. L. No. "
+                            - Group @2002:15
+                              Delimiter: " "
+                              Children:
+                                - Text @2003:17
+                                  Source: "variable"
+                                  Name: "volume"
+                                  Form: "long"
+                                - Text @2004:17
+                                  Source: "variable"
+                                  Name: "container-title"
+                                  Form: "long"
+                                - Text @2005:17
+                                  Source: "variable"
+                                  Name: "page-first"
+                                  Form: "long"
+                  Else:
+                    - Group @2010:13
+                      Delimiter: " "
+                      Children:
+                        - Text @2011:15
+                          Source: "variable"
+                          Name: "volume"
+                          Form: "long"
+                        - Text @2012:15
+                          Source: "variable"
+                          Name: "container-title"
+                          Form: "long"
+                        - Choose @2013:15
+                          Branches:
+                            - Branch @2014:17
+                              Match: "all"
+                              Variable:
+                                - "section"
+                              Children:
+                                - Group @2015:19
+                                  Delimiter: " "
+                                  Children:
+                                    - Label @2016:21
+                                      Variable: "section"
+                                      Form: "symbol"
+                                      Plural: "contextual"
+                                    - Text @2017:21
+                                      Source: "variable"
+                                      Name: "section"
+                                      Form: "long"
+                          Else:
+                            - Text @2021:19
+                              Source: "variable"
+                              Name: "page-first"
+                              Form: "long"
+            - Branch @2028:7
+              Match: "all"
+              Type:
+                - "regulation"
+              Children:
+                - Group @2029:9
+                  Delimiter: ", "
+                  Children:
+                    - Group @2030:11
+                      Delimiter: " "
+                      Children:
+                        - Text @2031:13
+                          Source: "variable"
+                          Name: "genre"
+                          Form: "long"
+                        - Group @2032:13
+                          Delimiter: " "
+                          Children:
+                            - Label @2033:15
+                              Variable: "number"
+                              Form: "short"
+                              Plural: "contextual"
+                              TextCase: "capitalize-first"
+                            - Text @2034:15
+                              Source: "variable"
+                              Name: "number"
+                              Form: "long"
+                    - Group @2037:11
+                      Delimiter: " "
+                      Children:
+                        - Text @2038:13
+                          Source: "variable"
+                          Name: "volume"
+                          Form: "long"
+                        - Text @2039:13
+                          Source: "variable"
+                          Name: "container-title"
+                          Form: "long"
+                        - Choose @2040:13
+                          Branches:
+                            - Branch @2041:15
+                              Match: "all"
+                              Variable:
+                                - "section"
+                              Children:
+                                - Group @2042:17
+                                  Delimiter: " "
+                                  Children:
+                                    - Label @2043:19
+                                      Variable: "section"
+                                      Form: "symbol"
+                                      Plural: "contextual"
+                                    - Text @2044:19
+                                      Source: "variable"
+                                      Name: "section"
+                                      Form: "long"
+                          Else:
+                            - Text @2048:17
+                              Source: "variable"
+                              Name: "page-first"
+                              Form: "long"
+    "container-periodical": Macro @1520:3
+      Name: "container-periodical"
+      Children:
+        - Group @1521:5
+          Delimiter: ". "
+          Children:
+            - Group @1522:7
+              Delimiter: ", "
+              Children:
+                - Text @1523:9
+                  Source: "variable"
+                  Name: "container-title"
+                  Form: "long"
+                  FontStyle: "italic"
+                  TextCase: "title"
+                - Choose @1524:9
+                  Branches:
+                    - Branch @1525:11
+                      Match: "all"
+                      Variable:
+                        - "volume"
+                      Children:
+                        - Group @1526:13
+                          Children:
+                            - Text @1527:15
+                              Source: "variable"
+                              Name: "volume"
+                              Form: "long"
+                              FontStyle: "italic"
+                            - Text @1528:15
+                              Source: "variable"
+                              Name: "issue"
+                              Form: "long"
+                              Prefix: "("
+                              Suffix: ")"
+                  Else:
+                    - Text @1532:13
+                      Source: "variable"
+                      Name: "issue"
+                      Form: "long"
+                      FontStyle: "italic"
+                - Choose @1535:9
+                  Branches:
+                    - Branch @1536:11
+                      Match: "all"
+                      Variable:
+                        - "number"
+                      Children:
+                        - Group @1538:13
+                          Delimiter: " "
+                          Children:
+                            - Text @1539:15
+                              Source: "term"
+                              Name: "article-locator"
+                              Form: "long"
+                              TextCase: "capitalize-first"
+                            - Text @1540:15
+                              Source: "variable"
+                              Name: "number"
+                              Form: "long"
+                  Else:
+                    - Text @1544:13
+                      Source: "variable"
+                      Name: "page"
+                      Form: "long"
+            - Choose @1548:7
+              Branches:
+                - Branch @1549:9
+                  Match: "all"
+                  Variable:
+                    - "issued"
+                  Children:
+                    - Choose @1550:11
+                      Branches:
+                        - Branch @1551:13
+                          Match: "none"
+                          Variable:
+                            - "issue"
+                            - "number"
+                            - "page"
+                            - "volume"
+                          Children:
+                            - Text @1553:15
+                              Source: "variable"
+                              Name: "status"
+                              Form: "long"
+                              TextCase: "capitalize-first"
+    "database-location": Macro @1264:3
+      Name: "database-location"
+      Children:
+        - Choose @1265:5
+          Branches:
+            - Branch @1266:7
+              Match: "none"
+              Variable:
+                - "archive-place"
+              Children:
+                - Text @1268:9
+                  Source: "variable"
+                  Name: "archive_location"
+                  Form: "long"
+    "date-bib": Macro @348:3
+      Name: "date-bib"
+      Children:
+        - Group @349:5
+          Delimiter: " "
+          Prefix: "("
+          Suffix: ")"
+          Children:
+            - Choose @350:7
+              Branches:
+                - Branch @351:9
+                  Match: "all"
+                  IsUncertainDate:
+                    - "issued"
+                  Children:
+                    - Text @352:11
+                      Source: "term"
+                      Name: "circa"
+                      Form: "short"
+            - Group @355:7
+              Children:
+                - Choose @356:9
+                  Branches:
+                    - Branch @357:11
+                      Match: "all"
+                      Variable:
+                        - "issued"
+                      Children:
+                        - Group @358:13
+                          Delimiter: ", "
+                          Children:
+                            - Group @359:15
+                              Children:
+                                - Date @360:17
+                                  Variable: "issued"
+                                  Form: "numeric"
+                                  DateParts: "year"
+                                - Text @361:17
+                                  Source: "variable"
+                                  Name: "year-suffix"
+                                  Form: "long"
+                            - Choose @363:15
+                              Branches:
+                                - Branch @364:17
+                                  Match: "any"
+                                  Type:
+                                    - "article-magazine"
+                                    - "article-newspaper"
+                                    - "broadcast"
+                                    - "collection"
+                                    - "document"
+                                    - "event"
+                                    - "interview"
+                                    - "motion_picture"
+                                    - "pamphlet"
+                                    - "performance"
+                                    - "personal_communication"
+                                    - "post"
+                                    - "post-weblog"
+                                    - "song"
+                                    - "speech"
+                                    - "webpage"
+                                  Children:
+                                    - Date @366:19
+                                      Variable: "issued"
+                                      Parts:
+                                        - DatePart @367:21
+                                          Name: "month"
+                                        - DatePart @368:21
+                                          Name: "day"
+                                          Prefix: " "
+                                - Branch @371:17
+                                  Match: "all"
+                                  Type:
+                                    - "paper-conference"
+                                  Children:
+                                    - Choose @373:19
+                                      Branches:
+                                        - Branch @374:21
+                                          Match: "none"
+                                          Variable:
+                                            - "collection-editor"
+                                            - "compiler"
+                                            - "editor"
+                                            - "editorial-director"
+                                            - "issue"
+                                            - "page"
+                                            - "volume"
+                                          Children:
+                                            - Date @375:23
+                                              Variable: "issued"
+                                              Parts:
+                                                - DatePart @376:25
+                                                  Name: "month"
+                                                - DatePart @377:25
+                                                  Name: "day"
+                                                  Prefix: " "
+                    - Branch @387:11
+                      Match: "all"
+                      Variable:
+                        - "status"
+                      Children:
+                        - Group @388:13
+                          Children:
+                            - Text @390:15
+                              Source: "variable"
+                              Name: "status"
+                              Form: "long"
+                              TextCase: "lowercase"
+                            - Text @391:15
+                              Source: "variable"
+                              Name: "year-suffix"
+                              Form: "long"
+                              Prefix: "-"
+                  Else:
+                    - Text @395:13
+                      Source: "term"
+                      Name: "no date"
+                      Form: "short"
+                    - Text @396:13
+                      Source: "variable"
+                      Name: "year-suffix"
+                      Form: "long"
+                      Prefix: "-"
+    "date-intext": Macro @446:3
+      Name: "date-intext"
+      Children:
+        - Choose @447:5
+          Branches:
+            - Branch @448:7
+              Match: "all"
+              Variable:
+                - "issued"
+              Children:
+                - Group @449:9
+                  Delimiter: "/"
+                  Children:
+                    - Group @450:11
+                      Delimiter: " "
+                      Children:
+                        - Choose @451:13
+                          Branches:
+                            - Branch @452:15
+                              Match: "all"
+                              IsUncertainDate:
+                                - "original-date"
+                              Children:
+                                - Text @453:17
+                                  Source: "term"
+                                  Name: "circa"
+                                  Form: "short"
+                        - Date @456:13
+                          Variable: "original-date"
+                          Parts:
+                            - DatePart @457:15
+                              Name: "year"
+                    - Group @460:11
+                      Delimiter: " "
+                      Children:
+                        - Choose @461:13
+                          Branches:
+                            - Branch @462:15
+                              Match: "all"
+                              IsUncertainDate:
+                                - "issued"
+                              Children:
+                                - Text @463:17
+                                  Source: "term"
+                                  Name: "circa"
+                                  Form: "short"
+                        - Group @466:13
+                          Children:
+                            - Choose @467:15
+                              Branches:
+                                - Branch @468:17
+                                  Match: "any"
+                                  Type:
+                                    - "interview"
+                                    - "personal_communication"
+                                  Children:
+                                    - Choose @469:19
+                                      Branches:
+                                        - Branch @470:21
+                                          Match: "none"
+                                          Variable:
+                                            - "archive"
+                                            - "container-title"
+                                            - "DOI"
+                                            - "publisher"
+                                            - "URL"
+                                          Children:
+                                            - Date @473:23
+                                              Variable: "issued"
+                                              Form: "text"
+                                              DateParts: "year-month-day"
+                                      Else:
+                                        - Date @476:23
+                                          Variable: "issued"
+                                          Parts:
+                                            - DatePart @477:25
+                                              Name: "year"
+                              Else:
+                                - Date @483:19
+                                  Variable: "issued"
+                                  Parts:
+                                    - DatePart @484:21
+                                      Name: "year"
+                            - Text @488:15
+                              Source: "variable"
+                              Name: "year-suffix"
+                              Form: "long"
+            - Branch @493:7
+              Match: "all"
+              Variable:
+                - "status"
+              Children:
+                - Text @495:9
+                  Source: "variable"
+                  Name: "status"
+                  Form: "long"
+                  TextCase: "lowercase"
+                - Text @496:9
+                  Source: "variable"
+                  Name: "year-suffix"
+                  Form: "long"
+                  Prefix: "-"
+          Else:
+            - Text @499:9
+              Source: "term"
+              Name: "no date"
+              Form: "short"
+            - Text @500:9
+              Source: "variable"
+              Name: "year-suffix"
+              Form: "long"
+              Prefix: "-"
+    "date-legal": Macro @1863:3
+      Name: "date-legal"
+      Children:
+        - Choose @1864:5
+          Branches:
+            - Branch @1865:7
+              Match: "all"
+              Type:
+                - "treaty"
+              Children:
+                - Date @1866:9
+                  Variable: "issued"
+                  Form: "text"
+                  DateParts: "year-month-day"
+            - Branch @1868:7
+              Match: "all"
+              Type:
+                - "legal_case"
+              Children:
+                - Group @1869:9
+                  Delimiter: " "
+                  Prefix: "("
+                  Suffix: ")"
+                  Children:
+                    - Text @1870:11
+                      Source: "variable"
+                      Name: "authority"
+                      Form: "long"
+                    - Choose @1871:11
+                      Branches:
+                        - Branch @1872:13
+                          Match: "any"
+                          Variable:
+                            - "container-title"
+                          Children:
+                            - Date @1874:15
+                              Variable: "issued"
+                              Form: "numeric"
+                              DateParts: "year"
+                      Else:
+                        - Date @1879:15
+                          Variable: "issued"
+                          Form: "text"
+                          DateParts: "year-month-day"
+            - Branch @1884:7
+              Match: "any"
+              Type:
+                - "bill"
+                - "hearing"
+                - "legislation"
+                - "regulation"
+              Children:
+                - Group @1885:9
+                  Delimiter: " "
+                  Prefix: "("
+                  Suffix: ")"
+                  Children:
+                    - Group @1886:11
+                      Delimiter: " "
+                      Children:
+                        - Date @1887:13
+                          Variable: "original-date"
+                          Parts:
+                            - DatePart @1888:15
+                              Name: "year"
+                        - Text @1890:13
+                          Source: "term"
+                          Name: "and"
+                          Form: "symbol"
+                    - Choose @1892:11
+                      Branches:
+                        - Branch @1893:13
+                          Match: "all"
+                          Variable:
+                            - "issued"
+                          Children:
+                            - Date @1896:15
+                              Variable: "issued"
+                              Parts:
+                                - DatePart @1897:17
+                                  Name: "year"
+                      Else:
+                        - Date @1904:15
+                          Variable: "submitted"
+                          Form: "text"
+                          DateParts: "year-month-day"
+    "date-sort": Macro @402:3
+      Name: "date-sort"
+      Children:
+        - Choose @404:5
+          Branches:
+            - Branch @405:7
+              Match: "any"
+              Type:
+                - "article"
+                - "article-journal"
+                - "book"
+                - "chapter"
+                - "entry"
+                - "entry-dictionary"
+                - "entry-encyclopedia"
+                - "dataset"
+                - "figure"
+                - "graphic"
+                - "manuscript"
+                - "map"
+                - "musical_score"
+                - "patent"
+                - "report"
+                - "review"
+                - "review-book"
+                - "thesis"
+              Children:
+                - Date @406:9
+                  Variable: "issued"
+                  Form: "numeric"
+                  DateParts: "year"
+            - Branch @408:7
+              Match: "all"
+              Type:
+                - "paper-conference"
+              Children:
+                - Choose @410:9
+                  Branches:
+                    - Branch @411:11
+                      Match: "any"
+                      Variable:
+                        - "collection-editor"
+                        - "compiler"
+                        - "editor"
+                        - "editorial-director"
+                        - "issue"
+                        - "page"
+                        - "volume"
+                      Children:
+                        - Date @412:13
+                          Variable: "issued"
+                          Form: "numeric"
+                          DateParts: "year"
+                  Else:
+                    - Date @415:13
+                      Variable: "issued"
+                      Parts:
+                        - DatePart @416:15
+                          Name: "year"
+                          Form: "long"
+                        - DatePart @417:15
+                          Name: "month"
+                          Form: "numeric-leading-zeros"
+                        - DatePart @418:15
+                          Name: "day"
+                          Form: "numeric-leading-zeros"
+          Else:
+            - Date @424:9
+              Variable: "issued"
+              Parts:
+                - DatePart @425:11
+                  Name: "year"
+                  Form: "long"
+                - DatePart @426:11
+                  Name: "month"
+                  Form: "numeric-leading-zeros"
+                - DatePart @427:11
+                  Name: "day"
+                  Form: "numeric-leading-zeros"
+    "date-sort-group": Macro @432:3
+      Name: "date-sort-group"
+      Children:
+        - Choose @434:5
+          Branches:
+            - Branch @435:7
+              Match: "all"
+              Variable:
+                - "issued"
+              Children:
+                - Text @436:9
+                  Source: "value"
+                  Value: "1"
+            - Branch @438:7
+              Match: "all"
+              Variable:
+                - "status"
+              Children:
+                - Text @439:9
+                  Source: "value"
+                  Value: "2"
+          Else:
+            - Text @442:9
+              Source: "value"
+              Value: "0"
+    "edition": Macro @1326:3
+      Name: "edition"
+      Children:
+        - Choose @1327:5
+          Branches:
+            - Branch @1328:7
+              Match: "all"
+              IsNumeric:
+                - "edition"
+              Children:
+                - Group @1329:9
+                  Delimiter: " "
+                  Children:
+                    - Number @1330:11
+                      Variable: "edition"
+                      Form: "ordinal"
+                    - Label @1331:11
+                      Variable: "edition"
+                      Form: "short"
+                      Plural: "contextual"
+          Else:
+            - Text @1335:9
+              Source: "variable"
+              Name: "edition"
+              Form: "long"
+    "event": Macro @1704:3
+      Name: "event"
+      Children:
+        - Choose @1705:5
+          Branches:
+            - Branch @1706:7
+              Match: "any"
+              Variable:
+                - "event"
+                - "event-title"
+              Children:
+                - Choose @1709:9
+                  Branches:
+                    - Branch @1710:11
+                      Match: "all"
+                      Type:
+                        - "paper-conference"
+                      Children:
+                        - Choose @1711:13
+                          Branches:
+                            - Branch @1712:15
+                              Match: "none"
+                              Variable:
+                                - "collection-editor"
+                                - "compiler"
+                                - "editor"
+                                - "editorial-director"
+                                - "issue"
+                                - "page"
+                                - "volume"
+                              Children:
+                                - Group @1714:17
+                                  Delimiter: ", "
+                                  Children:
+                                    - Text @1715:19
+                                      Source: "macro"
+                                      Name: "event-title"
+                                    - Text @1716:19
+                                      Source: "variable"
+                                      Name: "event-place"
+                                      Form: "long"
+                  Else:
+                    - Group @1724:13
+                      Delimiter: ", "
+                      Children:
+                        - Text @1725:15
+                          Source: "macro"
+                          Name: "event-title"
+                        - Text @1726:15
+                          Source: "variable"
+                          Name: "event-place"
+                          Form: "long"
+    "event-title": Macro @1733:3
+      Name: "event-title"
+      Children:
+        - Choose @1734:5
+          Branches:
+            - Branch @1739:7
+              Match: "all"
+              Variable:
+                - "event-title"
+              Children:
+                - Text @1740:9
+                  Source: "variable"
+                  Name: "event-title"
+                  Form: "long"
+          Else:
+            - Text @1743:9
+              Source: "variable"
+              Name: "event"
+              Form: "long"
+    "format": Macro @1414:3
+      Name: "format"
+      Children:
+        - Choose @1415:5
+          Branches:
+            - Branch @1416:7
+              Match: "any"
+              Variable:
+                - "genre"
+                - "medium"
+              Children:
+                - Group @1417:9
+                  Delimiter: "; "
+                  Children:
+                    - Choose @1418:11
+                      Branches:
+                        - Branch @1419:13
+                          Match: "none"
+                          Variable:
+                            - "number"
+                          Children:
+                            - Text @1420:15
+                              Source: "variable"
+                              Name: "genre"
+                              Form: "long"
+                              TextCase: "capitalize-first"
+                    - Text @1423:11
+                      Source: "variable"
+                      Name: "medium"
+                      Form: "long"
+                      TextCase: "capitalize-first"
+          Else:
+            - Text @1427:9
+              Source: "macro"
+              Name: "generic-type-label"
+    "format-intext": Macro @1431:3
+      Name: "format-intext"
+      Children:
+        - Choose @1432:5
+          Branches:
+            - Branch @1433:7
+              Match: "any"
+              Variable:
+                - "genre"
+              Children:
+                - Text @1434:9
+                  Source: "variable"
+                  Name: "genre"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1436:7
+              Match: "all"
+              Variable:
+                - "medium"
+              Children:
+                - Text @1437:9
+                  Source: "variable"
+                  Name: "medium"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+          Else:
+            - Text @1440:9
+              Source: "macro"
+              Name: "generic-type-label"
+    "generic-type-label": Macro @1444:3
+      Name: "generic-type-label"
+      Children:
+        - Choose @1446:5
+          Branches:
+            - Branch @1447:7
+              Match: "all"
+              Type:
+                - "dataset"
+              Children:
+                - Text @1448:9
+                  Source: "term"
+                  Name: "dataset"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1450:7
+              Match: "all"
+              Type:
+                - "software"
+              Children:
+                - Text @1451:9
+                  Source: "term"
+                  Name: "software"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1453:7
+              Match: "any"
+              Type:
+                - "interview"
+                - "personal_communication"
+              Children:
+                - Choose @1454:9
+                  Branches:
+                    - Branch @1455:11
+                      Match: "none"
+                      Variable:
+                        - "archive"
+                        - "container-title"
+                        - "DOI"
+                        - "publisher"
+                        - "URL"
+                      Children:
+                        - Text @1456:13
+                          Source: "term"
+                          Name: "personal-communication"
+                          Form: "long"
+                          TextCase: "capitalize-first"
+                    - Branch @1458:11
+                      Match: "all"
+                      Type:
+                        - "interview"
+                      Children:
+                        - Text @1459:13
+                          Source: "term"
+                          Name: "interview"
+                          Form: "long"
+                          TextCase: "capitalize-first"
+            - Branch @1463:7
+              Match: "all"
+              Type:
+                - "map"
+              Children:
+                - Text @1464:9
+                  Source: "term"
+                  Name: "map"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1466:7
+              Match: "all"
+              Type:
+                - "collection"
+              Children:
+                - Text @1467:9
+                  Source: "term"
+                  Name: "collection"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1469:7
+              Match: "all"
+              Type:
+                - "song"
+              Children:
+                - Text @1470:9
+                  Source: "term"
+                  Name: "song"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1472:7
+              Match: "all"
+              Type:
+                - "motion_picture"
+              Children:
+                - Text @1473:9
+                  Source: "term"
+                  Name: "motion_picture"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1475:7
+              Match: "all"
+              Type:
+                - "post"
+              Children:
+                - Text @1476:9
+                  Source: "term"
+                  Name: "post"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1478:7
+              Match: "all"
+              Type:
+                - "review"
+              Children:
+                - Text @1479:9
+                  Source: "term"
+                  Name: "review"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1481:7
+              Match: "all"
+              Type:
+                - "review-book"
+              Children:
+                - Text @1482:9
+                  Source: "term"
+                  Name: "review-book"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1484:7
+              Match: "all"
+              Type:
+                - "broadcast"
+              Children:
+                - Text @1485:9
+                  Source: "term"
+                  Name: "broadcast"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1487:7
+              Match: "all"
+              Type:
+                - "figure"
+              Children:
+                - Text @1488:9
+                  Source: "term"
+                  Name: "figure"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+            - Branch @1490:7
+              Match: "all"
+              Type:
+                - "graphic"
+              Children:
+                - Text @1491:9
+                  Source: "term"
+                  Name: "graphic"
+                  Form: "long"
+                  TextCase: "capitalize-first"
+    "legal-cites": Macro @1791:3
+      Name: "legal-cites"
+      Children:
+        - Group @1798:5
+          Delimiter: " "
+          Children:
+            - Choose @1799:7
+              Branches:
+                - Branch @1800:9
+                  Match: "all"
+                  Type:
+                    - "treaty"
+                  Children:
+                    - Group @1801:11
+                      Delimiter: ", "
+                      Suffix: "."
+                      Children:
+                        - Names @1807:13
+                          Variables:
+                            - "author"
+                          Name: Name @1808:15
+                            Options: NameOptions
+                              InitializeWith: "."
+                              Form: "short"
+                              Delimiter: "-"
+                        - Text @1810:13
+                          Source: "macro"
+                          Name: "date-legal"
+                        - Text @1814:13
+                          Source: "macro"
+                          Name: "container-legal"
+              Else:
+                - Group @1818:11
+                  Delimiter: " "
+                  Suffix: "."
+                  Children:
+                    - Group @1819:13
+                      Delimiter: ", "
+                      Children:
+                        - Text @1820:15
+                          Source: "macro"
+                          Name: "title-legal"
+                        - Text @1821:15
+                          Source: "macro"
+                          Name: "container-legal"
+                    - Text @1823:13
+                      Source: "macro"
+                      Name: "date-legal"
+                    - Text @1824:13
+                      Source: "macro"
+                      Name: "parenthetical-legal"
+            - Text @1828:7
+              Source: "variable"
+              Name: "references"
+              Form: "long"
+            - Text @1829:7
+              Source: "macro"
+              Name: "access"
+    "locators-booklike": Macro @1297:3
+      Name: "locators-booklike"
+      Children:
+        - Choose @1298:5
+          Branches:
+            - Branch @1299:7
+              Match: "any"
+              Type:
+                - "article-journal"
+                - "article-magazine"
+                - "article-newspaper"
+                - "broadcast"
+                - "event"
+                - "interview"
+                - "patent"
+                - "performance"
+                - "periodical"
+                - "post"
+                - "post-weblog"
+                - "review"
+                - "review-book"
+                - "speech"
+                - "webpage"
+            - Branch @1300:7
+              Match: "all"
+              Type:
+                - "paper-conference"
+              Children:
+                - Choose @1301:9
+                  Branches:
+                    - Branch @1302:11
+                      Match: "any"
+                      Variable:
+                        - "collection-editor"
+                        - "compiler"
+                        - "editor"
+                        - "editorial-director"
+                      Children:
+                        - Group @1303:13
+                          Delimiter: ", "
+                          Children:
+                            - Text @1304:15
+                              Source: "macro"
+                              Name: "version"
+                            - Text @1305:15
+                              Source: "macro"
+                              Name: "edition"
+                            - Text @1306:15
+                              Source: "macro"
+                              Name: "volume-booklike"
+          Else:
+            - Group @1312:9
+              Delimiter: ", "
+              Children:
+                - Text @1313:11
+                  Source: "macro"
+                  Name: "version"
+                - Text @1314:11
+                  Source: "macro"
+                  Name: "edition"
+                - Text @1315:11
+                  Source: "macro"
+                  Name: "volume-booklike"
+    "number": Macro @1272:3
+      Name: "number"
+      Children:
+        - Choose @1273:5
+          Branches:
+            - Branch @1274:7
+              Match: "all"
+              Variable:
+                - "number"
+              Children:
+                - Group @1275:9
+                  Delimiter: ", "
+                  Children:
+                    - Group @1276:11
+                      Delimiter: " "
+                      Children:
+                        - Text @1277:13
+                          Source: "variable"
+                          Name: "genre"
+                          Form: "long"
+                          TextCase: "title"
+                        - Group @1278:13
+                          Delimiter: " "
+                          Children:
+                            - Label @1279:15
+                              Variable: "number"
+                              Form: "short"
+                              Plural: "contextual"
+                              TextCase: "capitalize-first"
+                            - Text @1280:15
+                              Source: "variable"
+                              Name: "number"
+                              Form: "long"
+                    - Choose @1283:11
+                      Branches:
+                        - Branch @1284:13
+                          Match: "all"
+                          Type:
+                            - "thesis"
+                          Children:
+                            - Choose @1285:15
+                              Branches:
+                                - Branch @1287:17
+                                  Match: "any"
+                                  Variable:
+                                    - "archive"
+                                    - "DOI"
+                                    - "URL"
+                                  Children:
+                                    - Text @1288:19
+                                      Source: "variable"
+                                      Name: "publisher"
+                                      Form: "long"
+    "parenthetical": Macro @707:3
+      Name: "parenthetical"
+      Children:
+        - Group @709:5
+          Prefix: "("
+          Suffix: ")"
+          Children:
+            - Choose @710:7
+              Branches:
+                - Branch @711:9
+                  Match: "all"
+                  Type:
+                    - "patent"
+                  Children:
+                    - Group @713:11
+                      Delimiter: " "
+                      Children:
+                        - Text @714:13
+                          Source: "variable"
+                          Name: "authority"
+                          Form: "short"
+                        - Choose @715:13
+                          Branches:
+                            - Branch @716:15
+                              Match: "all"
+                              Variable:
+                                - "genre"
+                              Children:
+                                - Text @717:17
+                                  Source: "variable"
+                                  Name: "genre"
+                                  Form: "long"
+                                  TextCase: "capitalize-first"
+                          Else:
+                            - Text @720:17
+                              Source: "term"
+                              Name: "patent"
+                              Form: "long"
+                              TextCase: "capitalize-first"
+                        - Group @723:13
+                          Delimiter: " "
+                          Children:
+                            - Label @724:15
+                              Variable: "number"
+                              Form: "short"
+                              Plural: "contextual"
+                              TextCase: "capitalize-first"
+                            - Text @725:15
+                              Source: "variable"
+                              Name: "number"
+                              Form: "long"
+                - Branch @729:9
+                  Match: "any"
+                  Type:
+                    - "post"
+                    - "webpage"
+                  Children:
+                    - Group @731:11
+                      Delimiter: "; "
+                      Children:
+                        - Text @732:13
+                          Source: "macro"
+                          Name: "secondary-contributors"
+                        - Text @733:13
+                          Source: "macro"
+                          Name: "database-location"
+                        - Text @734:13
+                          Source: "macro"
+                          Name: "number"
+                        - Text @735:13
+                          Source: "macro"
+                          Name: "locators-booklike"
+                - Branch @738:9
+                  Match: "any"
+                  Type:
+                    - "report"
+                  Children:
+                    - Choose @739:11
+                      Branches:
+                        - Branch @740:13
+                          Match: "none"
+                          Variable:
+                            - "title"
+                          Children:
+                            - Group @742:15
+                              Delimiter: "; "
+                              Children:
+                                - Text @743:17
+                                  Source: "macro"
+                                  Name: "secondary-contributors"
+                                - Text @744:17
+                                  Source: "macro"
+                                  Name: "database-location"
+                                - Text @745:17
+                                  Source: "macro"
+                                  Name: "locators-booklike"
+                        - Branch @749:13
+                          Match: "all"
+                          Variable:
+                            - "container-title"
+                          Children:
+                            - Text @750:15
+                              Source: "macro"
+                              Name: "secondary-contributors"
+                      Else:
+                        - Group @753:15
+                          Delimiter: "; "
+                          Children:
+                            - Text @754:17
+                              Source: "macro"
+                              Name: "secondary-contributors"
+                            - Text @755:17
+                              Source: "macro"
+                              Name: "database-location"
+                            - Text @756:17
+                              Source: "macro"
+                              Name: "number"
+                            - Text @757:17
+                              Source: "macro"
+                              Name: "locators-booklike"
+                - Branch @762:9
+                  Match: "all"
+                  Variable:
+                    - "container-title"
+                  Children:
+                    - Group @763:11
+                      Delimiter: "; "
+                      Children:
+                        - Text @764:13
+                          Source: "macro"
+                          Name: "secondary-contributors"
+                        - Choose @765:13
+                          Branches:
+                            - Branch @766:15
+                              Match: "any"
+                              Type:
+                                - "broadcast"
+                                - "graphic"
+                                - "map"
+                                - "motion_picture"
+                                - "song"
+                              Children:
+                                - Text @768:17
+                                  Source: "macro"
+                                  Name: "number"
+              Else:
+                - Group @774:11
+                  Delimiter: "; "
+                  Children:
+                    - Text @775:13
+                      Source: "macro"
+                      Name: "secondary-contributors"
+                    - Text @776:13
+                      Source: "macro"
+                      Name: "database-location"
+                    - Text @777:13
+                      Source: "macro"
+                      Name: "number"
+                    - Text @778:13
+                      Source: "macro"
+                      Name: "locators-booklike"
+    "parenthetical-container": Macro @784:3
+      Name: "parenthetical-container"
+      Children:
+        - Choose @785:5
+          Branches:
+            - Branch @786:7
+              Match: "any"
+              Variable:
+                - "container-title"
+              Children:
+                - Group @787:9
+                  Prefix: "("
+                  Suffix: ")"
+                  Children:
+                    - Group @788:11
+                      Delimiter: "; "
+                      Children:
+                        - Text @789:13
+                          Source: "macro"
+                          Name: "database-location"
+                        - Choose @790:13
+                          Branches:
+                            - Branch @791:15
+                              Match: "none"
+                              Type:
+                                - "broadcast"
+                                - "graphic"
+                                - "map"
+                                - "motion_picture"
+                                - "song"
+                              Children:
+                                - Text @793:17
+                                  Source: "macro"
+                                  Name: "number"
+                        - Text @796:13
+                          Source: "macro"
+                          Name: "locators-booklike"
+    "parenthetical-legal": Macro @2056:3
+      Name: "parenthetical-legal"
+      Children:
+        - Choose @2057:5
+          Branches:
+            - Branch @2058:7
+              Match: "all"
+              Type:
+                - "hearing"
+              Children:
+                - Group @2059:9
+                  Delimiter: " "
+                  Prefix: "("
+                  Suffix: ")"
+                  Children:
+                    - Text @2061:11
+                      Source: "term"
+                      Name: "hearing"
+                      Form: "verb"
+                    - Names @2062:11
+                      Variables:
+                        - "author"
+                      Name: Name @2063:13
+                        Options: NameOptions
+                          And: "symbol"
+                          Delimiter: ", "
+            - Branch @2067:7
+              Match: "any"
+              Type:
+                - "bill"
+                - "legislation"
+                - "regulation"
+              Children:
+                - Text @2069:9
+                  Source: "variable"
+                  Name: "status"
+                  Form: "long"
+                  Prefix: "("
+                  Suffix: ")"
+    "part-title": Macro @610:3
+      Name: "part-title"
+      Children:
+        - Group @611:5
+          Delimiter: ". "
+          Children:
+            - Group @612:7
+              Delimiter: " "
+              Children:
+                - Label @613:9
+                  Variable: "part-number"
+                  Form: "short"
+                  Plural: "contextual"
+                  TextCase: "capitalize-first"
+                - Text @614:9
+                  Source: "variable"
+                  Name: "part-number"
+                  Form: "long"
+            - Text @616:7
+              Source: "variable"
+              Name: "part-title"
+              Form: "long"
+              TextCase: "capitalize-first"
+    "periodical-title": Macro @563:3
+      Name: "periodical-title"
+      Children:
+        - Choose @565:5
+          Branches:
+            - Branch @566:7
+              Match: "any"
+              Variable:
+                - "container-title"
+              Children:
+                - Text @567:9
+                  Source: "macro"
+                  Name: "title-plus-part-title"
+          Else:
+            - Text @571:9
+              Source: "macro"
+              Name: "title-plus-part-title"
+              FontStyle: "italic"
+    "publication-history": Macro @1748:3
+      Name: "publication-history"
+      Children:
+        - Choose @1749:5
+          Branches:
+            - Branch @1750:7
+              Match: "all"
+              Type:
+                - "patent"
+              Children:
+                - Text @1751:9
+                  Source: "variable"
+                  Name: "references"
+                  Form: "long"
+                  Prefix: "("
+                  Suffix: ")"
+          Else:
+            - Group @1754:9
+              Delimiter: "; "
+              Prefix: "("
+              Suffix: ")"
+              Children:
+                - Choose @1756:11
+                  Branches:
+                    - Branch @1757:13
+                      Match: "all"
+                      Variable:
+                        - "issued"
+                      Children:
+                        - Choose @1758:15
+                          Branches:
+                            - Branch @1759:17
+                              Match: "any"
+                              Variable:
+                                - "issue"
+                                - "number"
+                                - "page"
+                                - "volume"
+                              Children:
+                                - Text @1760:19
+                                  Source: "variable"
+                                  Name: "status"
+                                  Form: "long"
+                                  TextCase: "capitalize-first"
+                - Choose @1765:11
+                  Branches:
+                    - Branch @1766:13
+                      Match: "all"
+                      Variable:
+                        - "references"
+                      Children:
+                        - Text @1770:15
+                          Source: "variable"
+                          Name: "references"
+                          Form: "long"
+                  Else:
+                    - Group @1773:15
+                      Delimiter: " "
+                      Children:
+                        - Text @1774:17
+                          Source: "term"
+                          Name: "original-work-published"
+                          Form: "long"
+                          TextCase: "capitalize-first"
+                        - Choose @1775:17
+                          Branches:
+                            - Branch @1776:19
+                              Match: "all"
+                              IsUncertainDate:
+                                - "original-date"
+                              Children:
+                                - Text @1777:21
+                                  Source: "term"
+                                  Name: "circa"
+                                  Form: "short"
+                        - Date @1780:17
+                          Variable: "original-date"
+                          Parts:
+                            - DatePart @1781:19
+                              Name: "year"
+    "publisher": Macro @1619:3
+      Name: "publisher"
+      Children:
+        - Group @1620:5
+          Delimiter: "; "
+          Children:
+            - Choose @1621:7
+              Branches:
+                - Branch @1622:9
+                  Match: "all"
+                  Type:
+                    - "thesis"
+                  Children:
+                    - Choose @1623:11
+                      Branches:
+                        - Branch @1624:13
+                          Match: "none"
+                          Variable:
+                            - "archive"
+                            - "DOI"
+                            - "URL"
+                          Children:
+                            - Text @1625:15
+                              Source: "variable"
+                              Name: "publisher"
+                              Form: "long"
+                - Branch @1629:9
+                  Match: "any"
+                  Type:
+                    - "post"
+                    - "webpage"
+                  Children:
+                    - Group @1631:11
+                      Delimiter: "; "
+                      Children:
+                        - Text @1632:13
+                          Source: "variable"
+                          Name: "container-title"
+                          Form: "long"
+                          TextCase: "title"
+                        - Text @1633:13
+                          Source: "variable"
+                          Name: "publisher"
+                          Form: "long"
+                - Branch @1636:9
+                  Match: "all"
+                  Type:
+                    - "paper-conference"
+                  Children:
+                    - Choose @1638:11
+                      Branches:
+                        - Branch @1639:13
+                          Match: "any"
+                          Variable:
+                            - "collection-editor"
+                            - "compiler"
+                            - "editor"
+                            - "editorial-director"
+                          Children:
+                            - Text @1640:15
+                              Source: "variable"
+                              Name: "publisher"
+                              Form: "long"
+                - Branch @1644:9
+                  Match: "none"
+                  Type:
+                    - "article-journal"
+                    - "article-magazine"
+                    - "article-newspaper"
+                    - "periodical"
+                    - "post-weblog"
+                    - "review"
+                    - "review-book"
+                  Children:
+                    - Text @1645:11
+                      Source: "variable"
+                      Name: "publisher"
+                      Form: "long"
+            - Group @1648:7
+              Delimiter: ", "
+              Children:
+                - Choose @1649:9
+                  Branches:
+                    - Branch @1650:11
+                      Match: "all"
+                      Variable:
+                        - "archive-place"
+                      Children:
+                        - Choose @1658:13
+                          Branches:
+                            - Branch @1659:15
+                              Match: "all"
+                              Variable:
+                                - "archive_collection"
+                              Children:
+                                - Group @1660:17
+                                  Delimiter: " "
+                                  Children:
+                                    - Text @1661:19
+                                      Source: "variable"
+                                      Name: "archive_collection"
+                                      Form: "long"
+                                    - Text @1662:19
+                                      Source: "variable"
+                                      Name: "archive_location"
+                                      Form: "long"
+                                      Prefix: "("
+                                      Suffix: ")"
+                                - Text @1664:17
+                                  Source: "variable"
+                                  Name: "archive"
+                                  Form: "long"
+                                - Text @1665:17
+                                  Source: "variable"
+                                  Name: "archive-place"
+                                  Form: "long"
+                          Else:
+                            - Group @1668:17
+                              Delimiter: " "
+                              Children:
+                                - Text @1669:19
+                                  Source: "variable"
+                                  Name: "archive"
+                                  Form: "long"
+                                - Text @1670:19
+                                  Source: "variable"
+                                  Name: "archive_location"
+                                  Form: "long"
+                                  Prefix: "("
+                                  Suffix: ")"
+                            - Text @1672:17
+                              Source: "variable"
+                              Name: "archive-place"
+                              Form: "long"
+                  Else:
+                    - Text @1677:13
+                      Source: "variable"
+                      Name: "archive"
+                      Form: "long"
+    "reviewed-item": Macro @1067:3
+      Name: "reviewed-item"
+      Children:
+        - Group @1069:5
+          Delimiter: "; "
+          Children:
+            - Group @1070:7
+              Delimiter: ", "
+              Children:
+                - Group @1071:9
+                  Delimiter: " "
+                  Children:
+                    - Choose @1072:11
+                      Branches:
+                        - Branch @1073:13
+                          Match: "all"
+                          Variable:
+                            - "reviewed-genre"
+                          Children:
+                            - Group @1074:15
+                              Delimiter: " "
+                              Children:
+                                - Text @1075:17
+                                  Source: "term"
+                                  Name: "review-of"
+                                  Form: "long"
+                                  TextCase: "capitalize-first"
+                                - Text @1076:17
+                                  Source: "variable"
+                                  Name: "reviewed-genre"
+                                  Form: "long"
+                                  TextCase: "lowercase"
+                        - Branch @1080:13
+                          Match: "none"
+                          Variable:
+                            - "number"
+                          Children:
+                            - Choose @1081:15
+                              Branches:
+                                - Branch @1082:17
+                                  Match: "all"
+                                  Variable:
+                                    - "genre"
+                                  Children:
+                                    - Text @1083:19
+                                      Source: "variable"
+                                      Name: "genre"
+                                      Form: "long"
+                                      TextCase: "capitalize-first"
+                                - Branch @1085:17
+                                  Match: "all"
+                                  Variable:
+                                    - "medium"
+                                  Children:
+                                    - Text @1086:19
+                                      Source: "variable"
+                                      Name: "medium"
+                                      Form: "long"
+                                      TextCase: "capitalize-first"
+                                - Branch @1088:17
+                                  Match: "all"
+                                  Type:
+                                    - "review-book"
+                                  Children:
+                                    - Group @1089:19
+                                      Delimiter: " "
+                                      Children:
+                                        - Text @1090:21
+                                          Source: "term"
+                                          Name: "review-of"
+                                          Form: "long"
+                                          TextCase: "capitalize-first"
+                                        - Text @1091:21
+                                          Source: "term"
+                                          Name: "book"
+                                          Form: "long"
+                                          TextCase: "lowercase"
+                              Else:
+                                - Text @1095:19
+                                  Source: "term"
+                                  Name: "review-of"
+                                  Form: "short"
+                                  TextCase: "capitalize-first"
+                      Else:
+                        - Choose @1100:15
+                          Branches:
+                            - Branch @1101:17
+                              Match: "all"
+                              Variable:
+                                - "medium"
+                              Children:
+                                - Text @1102:19
+                                  Source: "variable"
+                                  Name: "medium"
+                                  Form: "long"
+                                  TextCase: "capitalize-first"
+                            - Branch @1104:17
+                              Match: "all"
+                              Type:
+                                - "review-book"
+                              Children:
+                                - Group @1105:19
+                                  Delimiter: " "
+                                  Children:
+                                    - Text @1106:21
+                                      Source: "term"
+                                      Name: "review-of"
+                                      Form: "long"
+                                      TextCase: "capitalize-first"
+                                    - Text @1107:21
+                                      Source: "term"
+                                      Name: "book"
+                                      Form: "long"
+                                      TextCase: "lowercase"
+                          Else:
+                            - Text @1111:19
+                              Source: "term"
+                              Name: "review-of"
+                              Form: "short"
+                              TextCase: "capitalize-first"
+                    - Text @1116:11
+                      Source: "macro"
+                      Name: "reviewed-title"
+                - Names @1118:9
+                  Variables:
+                    - "reviewed-author"
+                  Name: Name @1120:11
+                    Options: NameOptions
+                      And: "symbol"
+                      InitializeWith: ". "
+                      Delimiter: ", "
+                  Label: Label @1119:11
+                    Form: "verb-short"
+                    Plural: "contextual"
+                    Suffix: " "
+                  LabelBeforeName: true
+            - Choose @1123:7
+              Branches:
+                - Branch @1124:9
+                  Match: "any"
+                  Variable:
+                    - "genre"
+                  Children:
+                    - Choose @1125:11
+                      Branches:
+                        - Branch @1126:13
+                          Match: "none"
+                          Variable:
+                            - "number"
+                          Children:
+                            - Text @1127:15
+                              Source: "variable"
+                              Name: "medium"
+                              Form: "long"
+                              TextCase: "capitalize-first"
+    "reviewed-title": Macro @1386:3
+      Name: "reviewed-title"
+      Children:
+        - Choose @1387:5
+          Branches:
+            - Branch @1388:7
+              Match: "all"
+              Variable:
+                - "reviewed-title"
+              Children:
+                - Text @1392:9
+                  Source: "variable"
+                  Name: "reviewed-title"
+                  Form: "long"
+                  FontStyle: "italic"
+          Else:
+            - Text @1396:9
+              Source: "variable"
+              Name: "title"
+              Form: "long"
+              FontStyle: "italic"
+    "reviewed-title-intext": Macro @1400:3
+      Name: "reviewed-title-intext"
+      Children:
+        - Choose @1401:5
+          Branches:
+            - Branch @1402:7
+              Match: "all"
+              Variable:
+                - "reviewed-title"
+              Children:
+                - Text @1406:9
+                  Source: "variable"
+                  Name: "reviewed-title"
+                  Form: "short"
+                  FontStyle: "italic"
+                  TextCase: "title"
+          Else:
+            - Text @1410:9
+              Source: "variable"
+              Name: "title"
+              Form: "short"
+              FontStyle: "italic"
+              TextCase: "title"
+    "secondary-contributors": Macro @1156:3
+      Name: "secondary-contributors"
+      Children:
+        - Choose @1157:5
+          Branches:
+            - Branch @1158:7
+              Match: "any"
+              Type:
+                - "article-journal"
+                - "article-magazine"
+                - "article-newspaper"
+                - "periodical"
+                - "post-weblog"
+                - "review"
+                - "review-book"
+              Children:
+                - Text @1159:9
+                  Source: "macro"
+                  Name: "secondary-contributors-periodical"
+            - Branch @1161:7
+              Match: "all"
+              Type:
+                - "paper-conference"
+              Children:
+                - Choose @1162:9
+                  Branches:
+                    - Branch @1163:11
+                      Match: "any"
+                      Variable:
+                        - "collection-editor"
+                        - "compiler"
+                        - "editor"
+                        - "editorial-director"
+                      Children:
+                        - Text @1164:13
+                          Source: "macro"
+                          Name: "secondary-contributors-booklike"
+                  Else:
+                    - Text @1167:13
+                      Source: "macro"
+                      Name: "secondary-contributors-periodical"
+          Else:
+            - Text @1172:9
+              Source: "macro"
+              Name: "secondary-contributors-booklike"
+    "secondary-contributors-booklike": Macro @1192:3
+      Name: "secondary-contributors-booklike"
+      Children:
+        - Group @1193:5
+          Delimiter: "; "
+          Children:
+            - Choose @1194:7
+              Branches:
+                - Branch @1195:9
+                  Match: "all"
+                  Variable:
+                    - "title"
+                  Children:
+                    - Names @1196:11
+                      Variables:
+                        - "interviewer"
+                      Name: Name @1197:13
+                        Options: NameOptions
+                          And: "symbol"
+                          InitializeWith: ". "
+                          Delimiter: ", "
+                      Label: Label @1198:13
+                        Form: "short"
+                        Plural: "contextual"
+                        Prefix: ", "
+                        TextCase: "title"
+            - Choose @1202:7
+              Branches:
+                - Branch @1203:9
+                  Match: "none"
+                  Type:
+                    - "post"
+                    - "webpage"
+                  Children:
+                    - Group @1205:11
+                      Delimiter: "; "
+                      Children:
+                        - Names @1206:13
+                          Variables:
+                            - "illustrator"
+                            - "narrator"
+                          Name: Name @1207:15
+                            Options: NameOptions
+                              And: "symbol"
+                              InitializeWith: ". "
+                              Delimiter: ", "
+                          Label: Label @1208:15
+                            Form: "short"
+                            Plural: "contextual"
+                            Prefix: ", "
+                            TextCase: "title"
+                          Delimiter: "; "
+                        - Choose @1210:13
+                          Branches:
+                            - Branch @1211:15
+                              Match: "none"
+                              Variable:
+                                - "container-title"
+                              Children:
+                                - Group @1212:17
+                                  Delimiter: "; "
+                                  Children:
+                                    - Names @1213:19
+                                      Variables:
+                                        - "container-author"
+                                      Name: Name @1215:21
+                                        Options: NameOptions
+                                          And: "symbol"
+                                          InitializeWith: ". "
+                                          Delimiter: ", "
+                                      Label: Label @1214:21
+                                        Form: "verb-short"
+                                        Plural: "contextual"
+                                        Suffix: " "
+                                        TextCase: "title"
+                                      LabelBeforeName: true
+                                    - Names @1217:19
+                                      Variables:
+                                        - "editor"
+                                        - "translator"
+                                      Name: Name @1218:21
+                                        Options: NameOptions
+                                          And: "symbol"
+                                          InitializeWith: ". "
+                                          Delimiter: ", "
+                                      Label: Label @1219:21
+                                        Form: "short"
+                                        Plural: "contextual"
+                                        Prefix: ", "
+                                        TextCase: "title"
+                                      Delimiter: "; "
+                                    - Names @1221:19
+                                      Variables:
+                                        - "compiler"
+                                        - "chair"
+                                        - "organizer"
+                                        - "curator"
+                                        - "series-creator"
+                                        - "executive-producer"
+                                      Name: Name @1222:21
+                                        Options: NameOptions
+                                          And: "symbol"
+                                          InitializeWith: ". "
+                                          Delimiter: ", "
+                                      Label: Label @1223:21
+                                        Form: "long"
+                                        Plural: "contextual"
+                                        Prefix: ", "
+                                        TextCase: "title"
+                                      Delimiter: "; "
+                          Else:
+                            - Choose @1228:17
+                              Branches:
+                                - Branch @1230:19
+                                  Match: "none"
+                                  Variable:
+                                    - "editor-translator"
+                                  Children:
+                                    - Names @1231:21
+                                      Variables:
+                                        - "translator"
+                                      Name: Name @1232:23
+                                        Options: NameOptions
+                                          And: "symbol"
+                                          InitializeWith: ". "
+                                          Delimiter: ", "
+                                      Label: Label @1233:23
+                                        Form: "short"
+                                        Plural: "contextual"
+                                        Prefix: ", "
+                                        TextCase: "title"
+                                      Delimiter: "; "
+              Else:
+                - Group @1242:11
+                  Delimiter: "; "
+                  Children:
+                    - Names @1243:13
+                      Variables:
+                        - "container-author"
+                      Name: Name @1245:15
+                        Options: NameOptions
+                          And: "symbol"
+                          InitializeWith: ". "
+                          Delimiter: ", "
+                      Label: Label @1244:15
+                        Form: "verb-short"
+                        Plural: "contextual"
+                        Suffix: " "
+                        TextCase: "title"
+                      LabelBeforeName: true
+                    - Names @1247:13
+                      Variables:
+                        - "editor"
+                        - "translator"
+                      Name: Name @1248:15
+                        Options: NameOptions
+                          And: "symbol"
+                          InitializeWith: ". "
+                          Delimiter: ", "
+                      Label: Label @1249:15
+                        Form: "short"
+                        Plural: "contextual"
+                        Prefix: ", "
+                        TextCase: "title"
+                      Delimiter: "; "
+                    - Names @1251:13
+                      Variables:
+                        - "illustrator"
+                        - "narrator"
+                      Name: Name @1252:15
+                        Options: NameOptions
+                          And: "symbol"
+                          InitializeWith: ". "
+                          Delimiter: ", "
+                      Label: Label @1253:15
+                        Form: "short"
+                        Plural: "contextual"
+                        Prefix: ", "
+                        TextCase: "title"
+                      Delimiter: "; "
+                    - Names @1255:13
+                      Variables:
+                        - "compiler"
+                        - "chair"
+                        - "organizer"
+                        - "curator"
+                        - "series-creator"
+                        - "executive-producer"
+                      Name: Name @1256:15
+                        Options: NameOptions
+                          And: "symbol"
+                          InitializeWith: ". "
+                          Delimiter: ", "
+                      Label: Label @1257:15
+                        Form: "long"
+                        Plural: "contextual"
+                        Prefix: ", "
+                        TextCase: "title"
+                      Delimiter: "; "
+    "secondary-contributors-periodical": Macro @1176:3
+      Name: "secondary-contributors-periodical"
+      Children:
+        - Group @1177:5
+          Delimiter: "; "
+          Children:
+            - Choose @1178:7
+              Branches:
+                - Branch @1179:9
+                  Match: "all"
+                  Variable:
+                    - "title"
+                  Children:
+                    - Names @1180:11
+                      Variables:
+                        - "interviewer"
+                      Name: Name @1181:13
+                        Options: NameOptions
+                          And: "symbol"
+                          InitializeWith: ". "
+                          Delimiter: ", "
+                      Label: Label @1182:13
+                        Form: "short"
+                        Plural: "contextual"
+                        Prefix: ", "
+                        TextCase: "title"
+                      Delimiter: "; "
+            - Names @1186:7
+              Variables:
+                - "translator"
+                - "narrator"
+              Name: Name @1187:9
+                Options: NameOptions
+                  And: "symbol"
+                  InitializeWith: ". "
+                  Delimiter: ", "
+              Label: Label @1188:9
+                Form: "short"
+                Plural: "contextual"
+                Prefix: ", "
+                TextCase: "title"
+              Delimiter: "; "
+    "title": Macro @535:3
+      Name: "title"
+      Children:
+        - Choose @536:5
+          Branches:
+            - Branch @537:7
+              Match: "any"
+              Type:
+                - "post"
+                - "webpage"
+              Children:
+                - Text @539:9
+                  Source: "macro"
+                  Name: "title-plus-part-title"
+                  FontStyle: "italic"
+            - Branch @544:7
+              Match: "any"
+              Type:
+                - "article-journal"
+                - "article-magazine"
+                - "article-newspaper"
+                - "periodical"
+                - "post-weblog"
+                - "review"
+                - "review-book"
+              Children:
+                - Text @545:9
+                  Source: "macro"
+                  Name: "periodical-title"
+            - Branch @547:7
+              Match: "all"
+              Type:
+                - "paper-conference"
+              Children:
+                - Choose @549:9
+                  Branches:
+                    - Branch @550:11
+                      Match: "any"
+                      Variable:
+                        - "collection-editor"
+                        - "compiler"
+                        - "editor"
+                        - "editorial-director"
+                      Children:
+                        - Text @551:13
+                          Source: "macro"
+                          Name: "booklike-title"
+                  Else:
+                    - Text @554:13
+                      Source: "macro"
+                      Name: "periodical-title"
+          Else:
+            - Text @559:9
+              Source: "macro"
+              Name: "booklike-title"
+    "title-and-descriptions": Macro @506:3
+      Name: "title-and-descriptions"
+      Children:
+        - Choose @507:5
+          Branches:
+            - Branch @508:7
+              Match: "all"
+              Variable:
+                - "title"
+              Children:
+                - Group @509:9
+                  Delimiter: " "
+                  Children:
+                    - Text @510:11
+                      Source: "macro"
+                      Name: "title"
+                    - Text @511:11
+                      Source: "macro"
+                      Name: "parenthetical"
+                    - Text @512:11
+                      Source: "macro"
+                      Name: "bracketed"
+          Else:
+            - Choose @516:9
+              Branches:
+                - Branch @517:11
+                  Match: "any"
+                  Type:
+                    - "bill"
+                    - "report"
+                  Children:
+                    - Text @521:13
+                      Source: "macro"
+                      Name: "number"
+                    - Text @522:13
+                      Source: "macro"
+                      Name: "bracketed"
+                    - Text @523:13
+                      Source: "macro"
+                      Name: "parenthetical"
+              Else:
+                - Group @526:13
+                  Delimiter: " "
+                  Children:
+                    - Text @527:15
+                      Source: "macro"
+                      Name: "bracketed"
+                    - Text @528:15
+                      Source: "macro"
+                      Name: "parenthetical"
+    "title-intext": Macro @650:3
+      Name: "title-intext"
+      Children:
+        - Choose @651:5
+          Branches:
+            - Branch @652:7
+              Match: "all"
+              Type:
+                - "bill"
+                - "report"
+              Children:
+                - Choose @656:9
+                  Branches:
+                    - Branch @657:11
+                      Match: "all"
+                      Variable:
+                        - "title"
+                      Children:
+                        - Text @658:13
+                          Source: "variable"
+                          Name: "title"
+                          Form: "short"
+                          TextCase: "title"
+                  Else:
+                    - Group @661:13
+                      Delimiter: " "
+                      Children:
+                        - Text @662:15
+                          Source: "variable"
+                          Name: "genre"
+                          Form: "long"
+                        - Group @663:15
+                          Delimiter: " "
+                          Children:
+                            - Choose @664:17
+                              Branches:
+                                - Branch @665:19
+                                  Match: "none"
+                                  Variable:
+                                    - "chapter-number"
+                                    - "container-title"
+                                  Children:
+                                    - Label @666:21
+                                      Variable: "number"
+                                      Form: "short"
+                                      Plural: "contextual"
+                                      TextCase: "capitalize-first"
+                            - Text @669:17
+                              Source: "variable"
+                              Name: "number"
+                              Form: "long"
+          Else:
+            - Choose @676:9
+              Branches:
+                - Branch @677:11
+                  Match: "none"
+                  Variable:
+                    - "title"
+                  Children:
+                    - Text @678:13
+                      Source: "macro"
+                      Name: "bracketed-intext"
+                - Branch @680:11
+                  Match: "all"
+                  Type:
+                    - "hearing"
+                  Children:
+                    - Text @682:13
+                      Source: "variable"
+                      Name: "title"
+                      Form: "short"
+                      FontStyle: "italic"
+                      TextCase: "title"
+                - Branch @684:11
+                  Match: "any"
+                  Type:
+                    - "legal_case"
+                  Children:
+                    - Text @686:13
+                      Source: "variable"
+                      Name: "title"
+                      Form: "long"
+                      FontStyle: "italic"
+                - Branch @688:11
+                  Match: "any"
+                  Type:
+                    - "legislation"
+                    - "regulation"
+                    - "treaty"
+                  Children:
+                    - Text @690:13
+                      Source: "variable"
+                      Name: "title"
+                      Form: "short"
+                      TextCase: "title"
+                - Branch @692:11
+                  Match: "any"
+                  Type:
+                    - "post"
+                    - "webpage"
+                  Children:
+                    - Text @694:13
+                      Source: "variable"
+                      Name: "title"
+                      Form: "short"
+                      FontStyle: "italic"
+                      TextCase: "title"
+                - Branch @696:11
+                  Match: "any"
+                  Variable:
+                    - "container-title"
+                  Children:
+                    - Text @698:13
+                      Source: "variable"
+                      Name: "title"
+                      Form: "short"
+                      Quotes: true
+                      TextCase: "title"
+              Else:
+                - Text @701:13
+                  Source: "variable"
+                  Name: "title"
+                  Form: "short"
+                  FontStyle: "italic"
+                  TextCase: "title"
+    "title-legal": Macro @1832:3
+      Name: "title-legal"
+      Children:
+        - Choose @1833:5
+          Branches:
+            - Branch @1834:7
+              Match: "any"
+              Type:
+                - "bill"
+                - "legal_case"
+                - "legislation"
+                - "regulation"
+                - "treaty"
+              Children:
+                - Text @1835:9
+                  Source: "variable"
+                  Name: "title"
+                  Form: "long"
+                  TextCase: "title"
+            - Branch @1837:7
+              Match: "all"
+              Type:
+                - "hearing"
+              Children:
+                - Group @1842:9
+                  Delimiter: ": "
+                  FontStyle: "italic"
+                  Children:
+                    - Text @1843:11
+                      Source: "variable"
+                      Name: "title"
+                      Form: "long"
+                      TextCase: "capitalize-first"
+                    - Group @1844:11
+                      Delimiter: " "
+                      Children:
+                        - Text @1845:13
+                          Source: "term"
+                          Name: "hearing"
+                          Form: "long"
+                          TextCase: "capitalize-first"
+                        - Group @1846:13
+                          Delimiter: " "
+                          Children:
+                            - Group @1847:15
+                              Delimiter: " "
+                              Children:
+                                - Text @1849:17
+                                  Source: "term"
+                                  Name: "on"
+                                  Form: "long"
+                                - Text @1850:17
+                                  Source: "variable"
+                                  Name: "number"
+                                  Form: "long"
+                            - Group @1852:15
+                              Delimiter: " "
+                              Children:
+                                - Text @1854:17
+                                  Source: "term"
+                                  Name: "at"
+                                  Form: "long"
+                                - Text @1855:17
+                                  Source: "variable"
+                                  Name: "section"
+                                  Form: "long"
+    "title-plus-part-title": Macro @587:3
+      Name: "title-plus-part-title"
+      Children:
+        - Choose @588:5
+          Branches:
+            - Branch @589:7
+              Match: "any"
+              Type:
+                - "review"
+                - "review-book"
+              Variable:
+                - "reviewed-author"
+                - "reviewed-genre"
+                - "reviewed-title"
+              Children:
+                - Choose @592:9
+                  Branches:
+                    - Branch @593:11
+                      Match: "none"
+                      Variable:
+                        - "reviewed-title"
+                  Else:
+                    - Group @595:13
+                      Delimiter: ": "
+                      Children:
+                        - Text @596:15
+                          Source: "variable"
+                          Name: "title"
+                          Form: "long"
+                        - Text @597:15
+                          Source: "macro"
+                          Name: "part-title"
+          Else:
+            - Group @603:9
+              Delimiter: ": "
+              Children:
+                - Text @604:11
+                  Source: "variable"
+                  Name: "title"
+                  Form: "long"
+                - Text @605:11
+                  Source: "macro"
+                  Name: "part-title"
+    "title-plus-volume-title": Macro @619:3
+      Name: "title-plus-volume-title"
+      Children:
+        - Group @620:5
+          Delimiter: ": "
+          Children:
+            - Text @621:7
+              Source: "variable"
+              Name: "title"
+              Form: "long"
+            - Text @622:7
+              Source: "macro"
+              Name: "volume-title"
+    "version": Macro @1320:3
+      Name: "version"
+      Children:
+        - Group @1321:5
+          Delimiter: " "
+          Children:
+            - Label @1322:7
+              Variable: "version"
+              Form: "long"
+              Plural: "contextual"
+              TextCase: "capitalize-first"
+            - Text @1323:7
+              Source: "variable"
+              Name: "version"
+              Form: "long"
+    "volume-booklike": Macro @1339:3
+      Name: "volume-booklike"
+      Children:
+        - Group @1340:5
+          Delimiter: ", "
+          Children:
+            - Choose @1342:7
+              Branches:
+                - Branch @1343:9
+                  Match: "all"
+                  Type:
+                    - "document"
+                    - "report"
+                    - "standard"
+                  Children:
+                    - Group @1344:11
+                      Delimiter: " "
+                      Children:
+                        - Text @1345:13
+                          Source: "variable"
+                          Name: "collection-title"
+                          Form: "long"
+                          TextCase: "title"
+                        - Text @1346:13
+                          Source: "variable"
+                          Name: "collection-number"
+                          Form: "long"
+            - Group @1350:7
+              Delimiter: " "
+              Children:
+                - Label @1351:9
+                  Variable: "supplement-number"
+                  Form: "long"
+                  Plural: "contextual"
+                  TextCase: "capitalize-first"
+                - Text @1352:9
+                  Source: "variable"
+                  Name: "supplement-number"
+                  Form: "long"
+            - Choose @1354:7
+              Branches:
+                - Branch @1355:9
+                  Match: "any"
+                  Variable:
+                    - "volume"
+                  Children:
+                    - Choose @1356:11
+                      Branches:
+                        - Branch @1358:13
+                          Match: "all"
+                          Variable:
+                            - "volume-title"
+                        - Branch @1359:13
+                          Match: "none"
+                          IsNumeric:
+                            - "volume"
+                      Else:
+                        - Group @1361:15
+                          Delimiter: " "
+                          Children:
+                            - Label @1362:17
+                              Variable: "volume"
+                              Form: "short"
+                              Plural: "contextual"
+                              TextCase: "capitalize-first"
+                            - Number @1363:17
+                              Variable: "volume"
+                              Form: "numeric"
+              Else:
+                - Group @1369:11
+                  Children:
+                    - Label @1370:13
+                      Variable: "number-of-volumes"
+                      Form: "short"
+                      Plural: "contextual"
+                      Suffix: " "
+                      TextCase: "capitalize-first"
+                    - Text @1371:13
+                      Source: "term"
+                      Name: "page-range-delimiter"
+                      Form: "long"
+                      Prefix: "1"
+                    - Number @1372:13
+                      Variable: "number-of-volumes"
+                      Form: "numeric"
+            - Group @1376:7
+              Delimiter: " "
+              Children:
+                - Label @1377:9
+                  Variable: "issue"
+                  Form: "long"
+                  Plural: "contextual"
+                  TextCase: "capitalize-first"
+                - Text @1378:9
+                  Source: "variable"
+                  Name: "issue"
+                  Form: "long"
+            - Group @1380:7
+              Delimiter: " "
+              Children:
+                - Label @1381:9
+                  Variable: "page"
+                  Form: "short"
+                  Plural: "contextual"
+                  Suffix: " "
+                - Text @1382:9
+                  Source: "variable"
+                  Name: "page"
+                  Form: "long"
+    "volume-title": Macro @625:3
+      Name: "volume-title"
+      Children:
+        - Group @626:5
+          Delimiter: ": "
+          Children:
+            - Choose @627:7
+              Branches:
+                - Branch @628:9
+                  Match: "all"
+                  Variable:
+                    - "volume-title"
+                  Children:
+                    - Group @629:11
+                      Delimiter: " "
+                      Children:
+                        - Group @630:13
+                          Delimiter: ". "
+                          Children:
+                            - Group @631:15
+                              Delimiter: " "
+                              Children:
+                                - Label @632:17
+                                  Variable: "volume"
+                                  Form: "short"
+                                  Plural: "contextual"
+                                  TextCase: "capitalize-first"
+                                - Text @633:17
+                                  Source: "variable"
+                                  Name: "volume"
+                                  Form: "long"
+                            - Text @635:15
+                              Source: "variable"
+                              Name: "volume-title"
+                              Form: "long"
+                - Branch @639:9
+                  Match: "none"
+                  IsNumeric:
+                    - "volume"
+                  Children:
+                    - Group @640:11
+                      Delimiter: " "
+                      Children:
+                        - Label @641:13
+                          Variable: "volume"
+                          Form: "short"
+                          Plural: "contextual"
+                          TextCase: "capitalize-first"
+                        - Text @642:13
+                          Source: "variable"
+                          Name: "volume"
+                          Form: "long"
+            - Text @647:7
+              Source: "macro"
+              Name: "part-title"
+  MacroOrder:
+    - "author-bib"
+    - "author-intext"
+    - "author-sort"
+    - "date-bib"
+    - "date-sort"
+    - "date-sort-group"
+    - "date-intext"
+    - "title-and-descriptions"
+    - "title"
+    - "periodical-title"
+    - "booklike-title"
+    - "title-plus-part-title"
+    - "part-title"
+    - "title-plus-volume-title"
+    - "volume-title"
+    - "title-intext"
+    - "parenthetical"
+    - "parenthetical-container"
+    - "bracketed"
+    - "bracketed-intext"
+    - "reviewed-item"
+    - "bracketed-container"
+    - "secondary-contributors"
+    - "secondary-contributors-periodical"
+    - "secondary-contributors-booklike"
+    - "database-location"
+    - "number"
+    - "locators-booklike"
+    - "version"
+    - "edition"
+    - "volume-booklike"
+    - "reviewed-title"
+    - "reviewed-title-intext"
+    - "format"
+    - "format-intext"
+    - "generic-type-label"
+    - "container"
+    - "container-periodical"
+    - "container-booklike"
+    - "publisher"
+    - "access"
+    - "event"
+    - "event-title"
+    - "publication-history"
+    - "legal-cites"
+    - "title-legal"
+    - "date-legal"
+    - "container-legal"
+    - "parenthetical-legal"
+    - "citation-locator"
+  Citation: Citation @2087:3
+    DisambiguateAddNames: true
+    DisambiguateAddGivenname: true
+    DisambiguateAddYearSuffix: true
+    GivennameDisambiguationRule: "primary-name-with-initials"
+    Collapse: "year"
+    NearNoteDistance: 5
+    NameOptions: InheritableNameOptions
+      EtAlMin: 3
+      EtAlUseFirst: 1
+    Sort: Sort @2088:5
+      Keys:
+        - SortKey @2089:7
+          Macro: "author-sort"
+          NamesMin: 3
+          NamesUseFirst: 1
+        - SortKey @2090:7
+          Macro: "date-sort-group"
+        - SortKey @2091:7
+          Macro: "date-sort"
+        - SortKey @2092:7
+          Variable: "status"
+    Layout: Layout @2094:5
+      Prefix: "("
+      Suffix: ")"
+      Delimiter: "; "
+      Children:
+        - Group @2095:7
+          Delimiter: ", "
+          Children:
+            - Text @2096:9
+              Source: "macro"
+              Name: "author-intext"
+            - Text @2097:9
+              Source: "macro"
+              Name: "date-intext"
+            - Text @2098:9
+              Source: "macro"
+              Name: "citation-locator"
+  Bibliography: Bibliography @2102:3
+    HangingIndent: true
+    LineSpacing: 2
+    SubsequentAuthorSubstituteRule: "complete-all"
+    NameOptions: InheritableNameOptions
+      EtAlMin: 21
+      EtAlUseFirst: 19
+      EtAlUseLast: true
+    Sort: Sort @2103:5
+      Keys:
+        - SortKey @2104:7
+          Macro: "author-sort"
+        - SortKey @2105:7
+          Macro: "date-sort-group"
+        - SortKey @2106:7
+          Macro: "date-sort"
+        - SortKey @2107:7
+          Variable: "status"
+        - SortKey @2108:7
+          Macro: "title"
+    Layout: Layout @2110:5
+      Children:
+        - Choose @2111:7
+          Branches:
+            - Branch @2112:9
+              Match: "any"
+              Type:
+                - "bill"
+                - "hearing"
+                - "legal_case"
+                - "legislation"
+                - "regulation"
+                - "treaty"
+              Children:
+                - Text @2114:11
+                  Source: "macro"
+                  Name: "legal-cites"
+          Else:
+            - Group @2117:11
+              Delimiter: " "
+              Children:
+                - Group @2118:13
+                  Delimiter: ". "
+                  Suffix: "."
+                  Children:
+                    - Text @2119:15
+                      Source: "macro"
+                      Name: "author-bib"
+                    - Text @2120:15
+                      Source: "macro"
+                      Name: "date-bib"
+                    - Text @2121:15
+                      Source: "macro"
+                      Name: "title-and-descriptions"
+                    - Text @2122:15
+                      Source: "macro"
+                      Name: "container"
+                    - Text @2123:15
+                      Source: "macro"
+                      Name: "event"
+                    - Text @2124:15
+                      Source: "macro"
+                      Name: "publisher"
+                - Text @2126:13
+                  Source: "macro"
+                  Name: "access"
+                - Text @2127:13
+                  Source: "macro"
+                  Name: "publication-history"
