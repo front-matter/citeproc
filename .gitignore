@@ -26,3 +26,6 @@ go.work.sum
 
 # planning document
 plan.md
+
+# agent instructions
+AGENTS.md
